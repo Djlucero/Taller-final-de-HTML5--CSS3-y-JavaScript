@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="estilos/stilo.css">
+    
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+           
+        </section>
+
+        <form action="" class="formulario"id="formulario" autocomplete="off">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="nombre">Nombres:</label>
+                <input type="text" name="nombre" id="nombre" maxlength="100" >
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" name="email" id="email" maxlength="200" >
+
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto" maxlength="200" >
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" aria-readonly="10" cols="50" maxlength="300"></textarea>
+                
+                <button type="button" onclick="validarformulario()" id="enviar" class="cambio">Enviar</button><br>  
+                <button type="reset" id="borrar" class="cambio">borrar</button>
+				
+            </div>
+        </form>
+
+    </section>
+    <footer>
+        &copy; <i><b>Diana Lucero</b></i>
+       </footer>
+</body>
+</html>

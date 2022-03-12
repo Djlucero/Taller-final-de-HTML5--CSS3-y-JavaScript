@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Java- Diana Lucero-Taller 3 </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+   
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+   
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+   
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">Diana Lucero</a></h1>
+            
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de Mi</a></li>
+                     <li><a href="Ejerjava.html">Java</a></li>
+                    <li><a href="java1.html">Taller 1</a></li>
+                    <li><a href="java2.html">Taller 2</a></li>
+                    <li><a href="java4.html">Taller 4</a></li>
+                    
+                  </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <div class="header-social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+      
+          </div>
+      
+        </header>
+
+    <main id="main">
+
+       
+        <section id="resume" class="resume">
+            <div class="container" data-aos="fade-up">
+
+
+                <div class="section-title">
+                    <h2>Taller 3</h2>
+                    <h2>Java Ciclos</h2>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 1</h4>
+                        <p><em>Realizar la siguiente figura por medio del ciclo Para<br>
+                                <img src="assets/img/taller1.jpg" alt="">
+                            </em></p>
+                        <pre>package com.sofka.Taller1;
+
+                        public class Ejercicio1_Ciclos {
+                            
+                             public static void main(String[] args) {
+                                 
+                                           
+                                    int n=10;
+                                    int a=0,b=0;
+                             
+                                    for(a=1;a<=n;a++)
+                                    {
+                                        
+                                        for(b=0;b< a;b++)
+                                        {
+                                        System.out.print("*");
+                                        }
+                                        System.out.println();
+                                    }
+                                }
+                            }
+                    </pre>
+                        </pre>
+
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 2</h4>
+                        <p><em>Realizar la siguiente figura por medio del ciclo Mientras - Hacer.<br>
+                                <img src="assets/img/taller2.jpg" alt="">
+                            </em></p>
+                        <pre>package com.sofka.Taller2;
+
+                        public class Ejercicio2_Ciclos {
+                            
+                             public static void main(String[] args) {
+                                 
+                            int n=10;
+                            int f=0, a=0, e=0;
+                        
+                            for(f=1;f<=10;f++)
+                            {
+                              for(e=0;e< n;e++)
+                            {
+                                    System.out.print(" ");
+                                }
+                              
+                              n=n-1;
+                              for(a=0; a< f; a++) {
+                             System.out.print("*");
+                              }
+                                System.out.println();
+                            }
+                        }
+                        }
+                    </pre>
+
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 3</h4>
+                        <p><em>Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que<br>
+                                <img src="assets/img/taller3.jpg" alt="">
+                            </em></p>
+                        <pre>package com.sofka.Taller3;
+
+
+
+                        public class Ejercicio3_Ciclos {
+                        
+                            
+                                 
+                                public static void main(String[] args) {
+                                    
+                                    int numFilas = 10;
+                                    
+                             
+                                    System.out.println();
+                                    for(int altura = 1; altura<=numFilas; altura++){
+                                        //Espacios en blanco
+                                        for(int blancos = 1; blancos<=numFilas-altura; blancos++){
+                                            System.out.print(" ");
+                                        }
+                             
+                                        //Asteriscos
+                                        for(int asteriscos=1; asteriscos<=(altura*2)-1; asteriscos++){
+                                            System.out.print("*");
+                                        }
+                                        System.out.println();
+                                    }
+                                    System.out.println("        ***");
+                                    System.out.println("        ***");
+                                    System.out.println("       *****");
+                                    System.out.println("      *******");
+                                    
+                                }
+                            }
+                    </pre>
+
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 4</h4>
+                        <p><em>Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario
+                                indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el
+                                usuario indica
+                                que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:<br>
+                                <img src="assets/img/taller4.jpg" alt=""></em></p>
+                        <pre>package com.sofka.Taller4;
+
+                        import java.util.Scanner;
+                        
+                        
+                        
+                        public class Ejercicio4_Ciclos {
+                            
+                            static int num1;
+                            static int i;
+                            
+                            public static void IngresarNumero() {
+                            Scanner lector =new Scanner(System.in);
+                            System.out.println("Digita el nuero de la tabla a multiplicar"); 	
+                            num1 = lector.nextInt();
+                            }
+                            public static void Calculo() {
+                                for (i=0; i< 10; i++) {
+                            System.out.println(i+"*"+num1+"="+i*num1); 	
+                                        
+                                }
+                                
+                            }
+                            
+                            public static void main(String[] args) {
+                                
+                                Scanner lector = new Scanner(System.in);
+                                  
+                                Ejercicio4_Ciclos bo = new Ejercicio4_Ciclos();
+                                
+                                bo.IngresarNumero();
+                                bo.Calculo();
+                            }
+                        }
+                        
+                    </pre>
+
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 5</h4>
+                        <p><em>Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el
+                                usuario
+                                desee terminar dicho ciclo. <br>
+                                Menu de usuario<br>
+                                1. Captura Nombre<br>
+                                2. Saludar Persona<br>
+                                3. Salir del Sistema<br>
+                            </em></p>
+                        <pre>package com.sofka.Taller5;
+
+
+                        import java.util.Scanner;
+                        
+                        
+                        
+                        public class Ejercicio5_Ciclos {
+                            
+                            
+                            public static void main(String[] args) {
+                                
+                                     Scanner sc = new Scanner(System.in);
+                                     String resp;
+                        
+                                    do {
+                                        System.out.println("Digite su Nombre y Apellido"); 	
+                                        String nombre = sc.nextLine();
+                                        System.out.println(nombre+" Bienvenid@ desea continuar si / no"); 
+                                        resp= sc.nextLine();
+                                        
+                                    }while(resp.equals("si") || resp.equals("SI"));
+                                    
+                                }
+                            
+                            }
+                        
+                    </pre>
+
+                    </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 6</h4>
+                        <p><em>Se está creando una aplicación que va a estar conectada con un prototipo que permita
+                                almacenar contactos
+                                telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo,
+                                teléfono y organización.
+                                Se requiere que la aplicación permita añadir 3 contactos verificando que el número no
+                                esté almacenado, buscar
+                                contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el
+                                sistema debe terminar
+                                cuando el usuario así lo indique.</em></p>
+                        <pre>package com.sofka.Taller6;
+
+                        import java.util.Scanner;
+                        
+                        public class Principal_Taller6 {
+                        
+                            public static void main(String[] args) {
+                                
+                                
+                                Scanner lector = new Scanner(System.in);
+                                
+                                Ejercio6BO bo = new Ejercio6BO();
+                                 while (true) {
+                                        System.out.println("CONTACTOS TELEFONICOS");
+                                        System.out.println("Seleccione tarea a realizar:");
+                                        System.out.println("1.Ingresar Contacto");
+                                        System.out.println("2.Buscar Contacto");
+                                        System.out.println("3.Eliminar Contacto");
+                                        System.out.println("4. Salir");
+                                        System.out.println("Opción:\n");
+                                        int opcion = lector.nextInt();
+                        
+                                        
+                                        if (opcion == 4) {
+                                            System.out.println("Hasta pronto");
+                                            break;
+                                
+                                        } else if (opcion == 1) {
+                                            System.out.println("Ingresar Contacto");
+                                            System.out.println("Digite nombre completo:");
+                                            lector.nextLine();
+                                            String nombre = lector.nextLine();
+                                            System.out.println("Digite nombre organizacion:");
+                                            String organizacion = lector.nextLine();
+                                            System.out.println("Digite Numero Telefono:");
+                                            int telefono = lector.nextInt();
+                                            System.out.println("Se agregó el contacto\n");
+                                            bo.crearDirectorio(nombre,organizacion,telefono);
+                                            
+                                        } else if (opcion == 2) {  
+                                            System.out.println("Buscar Contacto\"");
+                                            System.out.println("Digite nombre completo:\n");
+                                            lector.nextLine();
+                                            String buscar = lector.nextLine();
+                                            for (int post = 0; post < bo.lista_telefonica.size(); post++) {
+                                                if (buscar.equals(bo.lista_telefonica.get(post).getNombre())) {
+                                                    Ejercicio6_Ciclos encontrado = bo.lista_telefonica.get(post);
+                                                    System.out.println("Nombres: " + encontrado.getNombre());
+                                                    System.out.println("Organizacion: " + encontrado.getOrganizacion());
+                                                    System.out.println("Telefono: " + encontrado.getTelefono());
+                                                    
+                                                }
+                                            }
+                                            
+                                        } else if (opcion == 3) {
+                                            System.out.println("Eliminar contacto");
+                                            System.out.println("\"Digite nombre completo del contacto a eliminar:\n");
+                                            lector.nextLine();
+                                            String eliminar = lector.nextLine();
+                                            for (int pos = 0; pos < bo.lista_telefonica.size(); pos++) {
+                                                String elimina = bo.lista_telefonica.get(pos).getNombre();
+                                                if (eliminar.equals(elimina)) {
+                                                    bo.eliminarDirectorio(pos);
+                                                    System.out.println("el contacto ha sido eliminado con exito\n");
+                                                } else {
+                                                    System.out.println("el contacto no se encuentra registrado\n");
+                                                    }
+                                                }
+                        
+                                            }
+                                            
+                                        }
+                                    }
+                            }
+                        
+                    </pre>
+                    <P>Este taller lo componen 2 clases mas para ver las clases haga click en el siguiente enlace</P>
+                    <a href="https://github.com/Djlucero/Ejercicios-Taller3-Java/tree/main/CanterasNivel1Taller3/CanterasNivel1Taller3/src/com/sofka/Taller6">IR A GITHUB</a>
+
+                    </div>
+                    
+                </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 7</h4>
+                        <p><em>El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los
+                                usuarios del barrio
+                                y requiere una aplicación que permita registrar los vehículos que se cuidan en estas
+                                instalaciones. Se sugiere
+                                que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos
+                                del cliente como son
+                                nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de
+                                ingresar al parqueadero,
+                                retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero.
+                                Recuerde que el sistema debe
+                                terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo
+                                puede almacenar máximo 5
+                                vehículos.</em></p>
+                        <pre>package com.sofka.Taller7;
+
+                        import java.util.Scanner;
+                        
+                        public class Ejercicio7_Ciclos {
+                        
+                            public static void main(String[] args) {
+                                
+                                Scanner lector = new Scanner(System.in);
+                                
+                                 controlador bo = new controlador();
+                                 
+                                 while (true) {
+                                     
+                                         System.out.println("-----------------------------------------");
+                                        System.out.println("PARQUEADERO EL GUARDIAN");
+                                        System.out.println("Seleccione tarea a realizar:");
+                                        System.out.println("1. Ingreso de Vehiculos");
+                                        System.out.println("2. Salida de Vehiculos");
+                                        System.out.println("3. Consultar");
+                                        System.out.println("4. Salir");
+                                        System.out.println("Opción:\n");
+                                        System.out.println("-----------------------------------------");
+                                        int opcion = lector.nextInt();
+                                        
+                                        
+                                        if (opcion == 4) {
+                                            System.out.println("Hasta pronto");
+                                            break;
+                                            
+                                            
+                                        } else if (opcion == 1) {
+                                            System.out.println("**** Ingreso de Vehiculo ****");
+                                            System.out.println("Digite nombre y apellido de usuario");
+                                            lector.nextLine();
+                                            String nombre = lector.nextLine();
+                                            System.out.println("Digite numero de telefono:");
+                                            String telefono = lector.nextLine();
+                                            System.out.println("Digite placa del vehiculo:");
+                                            String placa = lector.nextLine();
+                                            System.out.println("Digite Marca del Vehiculo:");
+                                            String marca = lector.nextLine();
+                                            System.out.println("Se agregó el vehiculo\n");
+                                            bo.crearCliente(nombre, telefono, placa, marca);
+                                 
+                                        } else if (opcion == 2) {
+                                            System.out.println("*** Salida de Vehiculos ***");
+                                            System.out.println("Digite numero de Placa del vehiculo:\n");
+                                            lector.nextLine();
+                                            String eliminar = lector.nextLine();
+                                            for (int pos = 0; pos < bo.lista_parqueadero.size(); pos++) {
+                                                String elimina = bo.lista_parqueadero.get(pos).getPlaca();
+                                                if (eliminar.equals(elimina)) {
+                                                    bo.eliminarCliente(pos);
+                                                    System.out.println("el vehiculo ha salido con exito\n");
+                                            
+                                                } else {
+                                                    System.out.println("el vehiculo no se encuentra en el estacionamiento\n");
+                                     }
+                        
+                                 }
+                                 
+                                         } else if (opcion == 3) {
+                                                System.out.println("*** Consultar Vehiculos ***");
+                                                System.out.println("Digite numero de Placa del vehiculo:\n");
+                                                lector.nextLine();
+                                                String buscar = lector.nextLine();
+                                                for (int pos = 0; pos < bo.lista_parqueadero.size(); pos++) {
+                                                    if (buscar.equals(bo.lista_parqueadero.get(pos).getPlaca())) {
+                                                        Parqueadero encontrado = bo.lista_parqueadero.get(pos);
+                                                        System.out.println("Información del vehiculo\n");
+                                                        System.out.println("Nombre: " + encontrado.getNombre());
+                                                        System.out.println("Telefono: " + encontrado.getTelefono());
+                                                        System.out.println("Placa: " + encontrado.getPlaca());
+                                                        System.out.println("Marca: " + encontrado.getMarca());
+                                                          
+                                             }
+                        
+                                         }
+                                    
+                                             
+                                 }
+                        
+                                 }
+                        
+                                }
+                            }
+                        
+                    </pre>
+                    <P>Este taller lo componen 2 clases mas para ver las clases haga click en el siguiente enlace</P>
+                    <a href="https://github.com/Djlucero/Ejercicios-Taller3-Java/tree/main/CanterasNivel1Taller3/CanterasNivel1Taller3/src/com/sofka/Taller7">IR A GITHUB</a>
+                    </div>
+
+                    </div><br><br>
+
+                <div class="row">
+                    <div class="resume-item">
+
+                        <h4>Ejercicio 8</h4>
+                        <p><em>La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a
+                                sus clientes en los
+                                cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar
+                                con el trámite de adquirir
+                                la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al
+                                curso, consultar usuarios
+                                que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o
+                                no). Recuerde que el
+                                sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela
+                                tiene capacidad máxima de
+                                gestionar 8 usuarios en su totalidad.</em></p>
+                        <pre>package com.sofka.Taller8;
+
+                        import java.util.Scanner;
+                        
+                        import com.sofka.Taller6.Ejercicio6_Ciclos;
+                        
+                        public class Ejercicio8 {
+                        
+                            
+                            public void Ejercicio8() {
+                                
+                                
+                                leerMenu();
+                                
+                                
+                            }
+                                
+                            
+                            
+                            public static void leerMenu() {
+                                
+                                Scanner leer= new Scanner (System.in);
+                                Alumno a[] = new Alumno[8];
+                                
+                                String nombre =" ";
+                                String prueba=" ";
+                                int puntaje= 0;
+                                String resp = null;
+                                
+                                
+                                while (true) {	
+                                    System.out.println("*** ESCUELA AUTOMOVILISTICA EL MAESTRO ***");
+                                    System.out.println("Seleccione tarea a realizar:");
+                                    System.out.println("1.Registro de Usuarios al curso");
+                                    System.out.println("2.Consultar Usuarios y Resultados");
+                                    System.out.println("3. Salir");
+                                    System.out.println("Opción:\n");
+                                    int opcion = leer.nextInt();
+                            
+                                 
+                                 if (opcion == 3) {
+                                     System.out.println("Hasta pronto");
+                                     break;
+                            
+                                 } else if (opcion == 1) {
+                                            for (int i=0; i< a.length; i++) {
+                                         System.out.println("Digite nombre y apellido del alumno ");
+                                         nombre=leer.next();
+                                         System.out.println("Digite (presento) o (pendiente) para la prueba");
+                                         prueba=leer.next();
+                                         System.out.println("digite puntaje obtenido en la prueba de (1 a 5)");
+                                         puntaje=leer.nextInt();
+                                         a[i]=new Alumno(nombre,prueba,puntaje);
+                                        
+                                         
+                                     }
+                                 
+                        
+                                     }  else if (opcion == 2) {  
+                                            System.out.println("Buscar Contacto\"");
+                                            System.out.println("Digite nombre y apellido del alumno:\n");
+                                            leer.nextLine();
+                                            String buscar = leer.nextLine();
+                                         for (int i=0; i< a.length; i++) {
+                                             if	(buscar.equals(a[i].getNombre())) {
+                                                Alumno encontrado=a[i];
+                                                    System.out.println("Nombres: " + encontrado.getNombre());
+                                                    System.out.println("prueba: " + encontrado.getPrueba());
+                                                    System.out.println("puntaje: " + encontrado.getPuntaje());
+                                                   
+                                                    if(puntaje>3) {
+                                                        System.out.println(" Felilcitaciones Aprobo");
+                                                        
+                                                    }else
+                                                        
+                                                    { System.out.println("Lo sentimos usted No aprobo\n");
+                                                        System.out.println("debe presentar la prueba nuevamente\n");
+                                                    
+                                                    break;
+                                               
+                                                    
+                                            } 
+                                                
+                                                }
+                                            }
+                            
+                                     }
+                                }
+                                }
+                        
+                        
+                        
+                            
+                            
+                            }
+                        
+                    </pre>
+                    <P>Este taller lo componen más clases mas para ver las clases haga click en el siguiente enlace</P>
+                    <a href="https://github.com/Djlucero/Ejercicios-Taller3-Java/tree/main/CanterasNivel1Taller3/CanterasNivel1Taller3/src/com/sofka/Taller8">IR A GITHUB</a>
+
+                    </div>
+
+                    
+                </div><br><br>
+
+
+
+        </section>
+
+    </main>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Diana Lucero</span></strong>. All Rights Reserved
+            </div>
+           
+        </div>
+    </footer>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+   
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+   
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PseInt - Diana Lucero-Taller2</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Diana Lucero</a></h1>
+     
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de Mi</a></li>
+          <li><a class="active" href="tallerespseint.html">PseInt</a></li>
+          <li><a href="pseint1.html">Taller 1</a></li>
+          <li><a href="pseint3.html">Taller 3</a></li>
+          <li><a href="pseint4.html">Taller 4</a></li>
+          <li><a href="pseint5.html">Taller 5</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main id="main">
+
+  
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Taller 2</h2>
+            <h2>PseInt Condicionales</h2>
+            
+          </div>
+  
+          <div class="row">
+            <div class="resume-item">
+              <h4>VIDEO YOUTUBE</h4>
+  
+              <LInk><iframe width="727" height="409" src="https://www.youtube.com/embed/mG9Hzi4nYk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>></LInk>
+            </div>
+          </div> <br><br>
+  
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 1</h4>
+                <p><em>Realizar un programa en el cual se solicite la edad de una persona. Si
+                   la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</em></p>
+                <pre> private int edad;
+                  private Scanner input;
+                 
+                  public void Ejercicio1() {
+            
+                      input = new Scanner(System.in);
+            
+                      solicitarEdad();
+                      edad = capturarDatoInt();
+                      
+                      
+                      if (edad>=18) {
+                      System.out.println("Usted es mayor de edad"); 
+                    }
+                      
+                  }
+            
+                  private void solicitarEdad() {
+                      System.out.println("Por favor digite su edad");
+                      
+                      
+                  }
+            
+                  private int capturarDatoInt() {
+                    return input.nextInt();
+                  }
+                   
+                                 
+              }
+            
+                </pre>
+                
+              </div>
+          </div><br><br>
+  
+              <div class="row">
+                <div class="resume-item">
+                <h4>Ejercicio 2</h4>
+                <p><em>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, 
+                  deberá mostrar en pantalla: Usted aún es un niño(a).</em></p>
+                <pre>Proceso Ejercicio2
+    
+                  Definir edad Como Entero;
+                  Definir estado Como Logico;
+                  
+                  Escribir "Digite su edad";
+                  leer edad;
+                  
+                  si edad >=18 Entonces;
+                    Escribir "Usted es mayor de edad";
+                    
+                  SiNo
+                    Escribir "Usted todavia es un niño(a)";
+                      
+                  FinSi
+                  
+                FinProceso
+                              </pre>
+              </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 3</h4>
+                  <p><em>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. 
+                    Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo]
+                     usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona 
+                     es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted 
+                     es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.</em></p>
+                  
+                     <pre>Proceso Ejercicio3
+  
+                      Definir nombre Como Caracter;
+                      Definir apellido Como Caracter;
+                      Definir edad Como Entero;
+                      Definir estado Como Logico;
+                      
+                      Escribir "Digite su Nombre";
+                      leer nombre;
+                      Escribir "Digite su Apellido";
+                      leer apellido;
+                      Escribir "Digite su edad";
+                      leer edad;
+                      
+                      si edad >=18 Entonces;
+                        Escribir nombre, " Usted es mayor de edad, por lo tanto puede entrar a la fiesta.";
+                        
+                      SiNo
+                        Escribir nombre," usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+                          
+                      FinSi
+                    
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 4</h4>
+                  <p><em>La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio 
+                    el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que 
+                    adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, 
+                    consultar películas disponibles y recibir película en la video tienda con la opción de realizar 
+                    anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.</em></p>
+                  <pre>Proceso Ejercicio4
+  
+                    Definir nombre Como Caracter;
+                      Definir opcion Como Entero;;
+                      Definir pelicula Como Caracter;
+                      Definir comentarios Como Logico;
+                      Definir novedad Como Caracter;
+  
+  
+                      Escribir "VIDEOTIENDA EL PORVENIR";
+  
+                      Escribir "Digite nombre y apellido";
+                      leer nombre;
+  
+                      Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                      Escribir "1.Alquilar Pelicula";
+                      Escribir "2. Consultar peliculas disponibles ";
+                      Escribir "3. Recibir pelicula y comentarios";
+                      leer opcion;
+  
+                      Segun opcion Hacer
+                      1:
+                          Escribir "Digite pelicula a consultar";
+                          leer pelicula;
+                      2:
+                          Escribir " Peliculas Disponibles";
+                          Escribir " la Vida es Bella, Atrapame si puedes";
+                          Escribir " Encanto, Sing 2, Spaider-Man, Scream, Amenaza bajo el agua";
+                          Escribir " Matrix, kings-Man";
+                      3:
+                          Escribir " Recibir Peliculas y Comentarios";
+                          Escribir " Pelicula a Devolver";
+                          leer pelicula;
+                          Escribir " Desea añadir un comentario? (digite V o F)";
+                           Leer comentarios;
+                        Si comentarios= Verdadero Entonces
+                            Escribir "Digite Comentarios y Observaciones";
+                            leer novedad;
+                            Limpiar Pantalla;
+                            Escribir "la pelicula ", pelicula," presenta los siguientes daños y novedades ", novedad;
+                                  
+                  
+                            FinSi
+                      FinSegun
+                    
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 5</h4>
+                  <p><em>La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación
+                     para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+                     características que deben indicársele al cliente para que pueda escoger el producto a comprar. 
+                     Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto 
+                     y devoluciones en caso de que se presenten.</em></p>
+                  <pre>Proceso Ejercicio5
+  
+                    Definir nombre, producto, devolucion, caracteristica Como Caracter;
+                    definir opcion Como Entero;;
+                    Definir comentarios Como Logico;
+             
+                    
+                    Escribir "BIENVENIDOS A SU DROGUERIA MI SALUD";
+                    
+                    Escribir "Digite nombre y apellido";
+                    leer nombre;
+                    
+                    Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                    Escribir "1. COMPRA DE PRODUCTO";
+                    Escribir "2. CONSULTAR PRECIOS ";
+                    Escribir "3. DEVOLUCIONES";
+                    leer opcion;
+                    
+                    Segun opcion Hacer
+                      1:
+                        Escribir "Digite el nombre del producto";
+                        leer producto;
+                        Escribir "Digite caracteristicas del producto";
+                        leer caracteristica;
+                        Limpiar Pantalla;
+                        Escribir "Señor(a) ", nombre;
+                        Escribir "el producto ", producto, " con caracteristicas ";
+                        Escribir caracteristica, " sera entregado en caja al momento de su facturacion";
+                        Escribir "Muchas Gracias Por Su Compra";
+                        
+                      2:
+                        Escribir "CONSULTA DE PRECIOS";
+                        Escribir "* Ibuprofeno-200 mg PRECIO: $7500";
+                        Escribir "* Acido acetilsalicílico?500 mg PRECIO $20500";
+                        Escribir "* Morfina-10 mg (sulfato de morfina) PRECIO $18900";
+                        Escribir "* Dexametasona Inyección: 4 mg PRECIO $12500";
+                        Escribir "* Albendazol (masticables): 400 mg PRECIO $25500";
+                        Escribir "* Amoxicilina 250 mg PRECIO $30000";
+                        Escribir "* Azitromicina 500 mg PRECIO $13500";
+                        Escribir "* pirazinamida 400 mg PRECIO $15000";
+                                               
+                      3:
+                        Escribir " DEVOLUCIONES";
+                        Escribir " Digite el nombre del producto a devolver";
+                        leer producto;
+                        Escribir " Desea añadir un comentario? (digite V o F)";
+                         Leer comentarios;
+                        Si comentarios= Verdadero Entonces
+                          Escribir "Digite Comentarios y Observaciones";
+                          leer devolucion;
+                          Limpiar Pantalla;
+                          Escribir "el Medicamento ", producto," presenta novedad de devolucion por";
+                          Escribir devolucion;
+                          
+                          
+                        FinSi
+                    FinSegun
+
+                    fin proceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 6</h4>
+                  <p><em>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las 
+                    respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados
+                    a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones
+                    por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos 
+                    hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</em></p>
+                  <pre>Proceso Ejercicio6
+  
+                    Definir nombre, documento, placa, modelo, mecanico, observaciones, repuestos, arreglo Como Caracter;
+                    definir opcion Como Entero;;
+                    Definir repuesto, devolucion Como Logico;
+                                        
+                    Escribir "BIENVENIDOS TALLER DE MOTOS EL MAQUINISTA";
+                    
+                      Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                    Escribir "1. REGISTRO DE INGRESO";
+                    Escribir "2. REGISTRO DE SALIDA ";
+                    leer opcion;
+                    
+                    Segun opcion Hacer
+                      1:
+                        Escribir "Digite nombre y apellido del cliente";
+                        leer nombre;
+                        Escribir "Digite numero documento identidad del cliente";
+                        leer documento;
+                        Escribir "Digite numero de Placa de la moto";
+                        leer placa;
+                        Escribir "Digite modelo de la moto";
+                        leer modelo;
+                        Escribir "Digite observaciones por parte del cliente";
+                        leer observaciones;
+                        
+                        Limpiar Pantalla;
+                        Escribir "El señor(a) ",nombre, " identificado(a) con cedula No. ";
+                        Escribir documento, " ingresa la motocicleta de modelo; ";
+                        Escribir modelo, " y placa numero ", placa;
+                        Escribir "con las siguientes observaciones: ", observaciones;
+                                              
+                      2:
+                        Escribir "REGISTRO DE SALIDA";
+                        Escribir "Digite nombre del mecanico que realiaza la reparación";
+                        leer mecanico;
+                        Escribir "Digite numero de Placa de la moto";
+                        leer placa;
+                        Escribir "Digite arreglos realizados por el mecanico";
+                        leer arreglo;
+                        Escribir " Desea añadir un inventario de respuestos? (digite V o F)";
+                         Leer repuesto;
+                        Si repuesto= Verdadero Entonces;
+                          Escribir "Digite inventario cambio de repuestos";
+                          leer repuestos;
+                          Limpiar Pantalla;
+                          Escribir "el Mecanico ", mecanico," indica que a la moto de placas ", placa;
+                          Escribir "se le realizo arreglo con un inventario de los siguientes";
+                          Escribir "repuestos ", repuestos, " los cuales fueron usados para la reparación del vehiculo";
+                          Escribir "quedando en perfecto estado";
+                        FinSi
+                        
+                          FinSegun
+                    
+                  FinProceso
+                  
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 7</h4>
+                  <p><em>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC 
+                    (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada 
+                    persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y
+                    establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</em></p>
+                  <pre>Proceso Ejercicio7
+  
+                    Definir  nombre, documento Como Caracter;
+                    Definir  peso Como Entero;
+                    Definir estatura, imc Como Real;
+                                         
+                    Escribir "SECRETARIA DE SALUD";
+                    Escribir "Digite su Nombre y Apellido";
+                    leer nombre;
+                    Escribir "digite numero de documento de identidad";
+                    leer documento;
+                    Escribir "Digite su peso en kilogramos?";
+                    leer peso;
+                    Escribir "Digite su estatura en metros	";
+                    leer  estatura;
+                    
+                    imc<- peso/(estatura*estatura);
+                    
+                    Escribir  "señor(a)", nombre," su indice de masa corporal IMC es de: ", imc;
+                    
+                    Si (imc<18.5) Entonces;
+                      Escribir "Bajo de Peso";
+                    SiNo
+                      Si (imc >= 18.5 y imc <= 24.9) Entonces
+                        Escribir "Peso Normal";
+                        
+                      SiNo
+                        Si (imc >=25.0 y imc <= 29.9) Entonces
+                          Escribir "Preobecidad o Sobrepeso";	
+                        SiNo
+                          Si (imc >= 30.0 y imc <= 34.9) Entonces
+                            Escribir "Obecidad Clase I";
+                          SiNo
+                            Si (imc >= 35.0 y imc <=39.9) Entonces
+                              Escribir "Obecidad clase II";
+                            SiNo
+                              Si (imc >=40) Entonces
+                                Escribir "Obecidad clase III";
+                              FinSi
+                            FinSi
+                          FinSi
+                        FinSi
+                            
+                      FinSi
+                    FinSi
+                
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 8</h4>
+                  <p><em>El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le 
+                    permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene
+                    unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la 
+                    aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren 
+                    diariamente.</em></p>
+                  <pre>Proceso Ejercicio8
+  
+                    Definir nombre, documento Como Caracter;
+                    definir opcion,cantidad, precio,total Como Entero;;
+                                         
+                    Escribir "BIENVENIDOS PASTELERIA DELICATESE";
+                    Escribir "para ofecerte un mejor servicio Digita la siguiente informacion";
+                    Repetir
+                  
+                    Escribir "Digite nombre y apellido del cliente";
+                    leer nombre;
+                    Escribir "Digite numero documento identidad del cliente";
+                    leer documento;
+                    
+                      Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                      Escribir "1. Torta festival cantidad 12 porciones decoracion crema chantilli";
+                      Escribir "2. Torta festival cantidad 30 porciones decoracion crema chantilli";
+                      Escribir "3. Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate ";
+                      Escribir "4. Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate ";
+                      Escribir "5. Torta 3 leches cantidad 12 porciones decoracion crema leche";
+                      Escribir "6. Salir";
+                    
+                    leer opcion;
+                    
+                    Segun opcion Hacer
+                      1:
+                        
+                        Escribir "Usted ha elegido Torta festival cantidad 12 porciones decoracion crema chantilli ";
+                        Escribir "Ingrese cantidad";
+                        leer cantidad;
+                        Escribir "Digite precio";
+                        leer precio;
+                        total<-cantidad*precio;	
+                        Escribir "Buen dia señor(a) ", nombre, " su pedido es";
+                        Escribir "Torta festival cantidad 12 porciones decoracion crema chantilli ";
+                        Escribir "valor a cancelar ", total;
+                        
+                      2:
+                        Escribir "Usted ha elegido Torta festival cantidad 30 porciones decoracion crema chantilli ";
+                        Escribir "Ingrese cantidad";
+                        leer cantidad;
+                        Escribir "Digite precio";
+                        leer precio;
+                        total<-cantidad*precio;	
+                        Escribir "Buen dia señor(a) ", nombre, " su pedido es";
+                        Escribir "Torta festival cantidad 30 porciones decoracion crema chantilli ";
+                        Escribir "valor a cancelar ", total;
+                        
+                      3: 
+                        Escribir "Usted ha elegido Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate ";
+                        Escribir "Ingrese cantidad";
+                        leer cantidad;
+                        Escribir "Digite precio";
+                        leer precio;
+                        total<-cantidad*precio;	
+                        Escribir "Buen dia señor(a) ", nombre, " su pedido es";
+                        Escribir "Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate  ";
+                        Escribir "valor a cancelar ", total;
+                        
+                      4:
+                        Escribir "Usted ha elegido Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate  ";
+                        Escribir "Ingrese cantidad";
+                        leer cantidad;
+                        Escribir "Digite precio";
+                        leer precio;
+                        total<-cantidad*precio;	
+                        Escribir "Buen dia señor(a) ", nombre, " su pedido es";
+                        Escribir "Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate  ";
+                        Escribir "valor a cancelar ", total;
+                      5:
+                        Escribir "Usted ha elegido Torta 3 leches cantidad 12 porciones decoracion crema leche  ";
+                        Escribir "Ingrese cantidad";
+                        leer cantidad;
+                        Escribir "Digite precio";
+                        leer precio;
+                        total<-cantidad*precio;	
+                        Escribir "Buen dia señor(a) ", nombre, " su pedido es";
+                        Escribir "Torta 3 leches cantidad 12 porciones decoracion crema leche  ";
+                        Escribir "valor a cancelar ", total;
+                    FinSegun
+                  Hasta Que opcion==6
+                  
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 9</h4>
+                  <p><em>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área 
+                    de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio 
+                    solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione 
+                    si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos 
+                    necesarios para realizar cada cálculo y mostrar su respectivo resultado.</em></p>
+                  <pre>Proceso Ejercicio9
+  
+  
+                    definir  opcion Como Entero;;
+                    Definir largo, Ancho, base, altura,base2,alto, triangulo, rectangulo,trapecio Como Real;;
+                    
+                    Escribir "BIENVENIDOS A SU CLASE DE GEOMETRIA";
+                    Repetir
+                  
+                    Escribir "Seleccione la opcion de la figura a calcular";
+                    Escribir "1.Rectangulo";
+                    Escribir "2. Triangulo";
+                    Escribir "3. Trapecio";
+                    Escribir "4. Salir";
+                      
+                    leer opcion;
+                    
+                  
+                    Segun opcion Hacer
+                      1:
+                        Escribir "Usted ha elegido Rectangulo";
+                        Escribir "Digite largo de la figura";
+                        leer largo;
+                        Escribir "Digite Ancho de la figura";
+                        leer Ancho;
+                        rectangulo<-largo*ancho;	
+                        Escribir "el area del rectangulo es  ", rectangulo;
+                      2:
+                        Escribir "Usted ha elegido Triangulo";
+                        Escribir "Digite base de la figura";
+                        leer base;
+                        Escribir "Digite altura de la figura";
+                        leer altura;
+                        triangulo<-(base*altura)/2;	
+                        Escribir "el area del triangulo es  ", triangulo;
+                        
+                        
+                      3: 
+                        Escribir "Usted ha elegido Trapecio";
+                        Escribir "Digite base de la figura";
+                        leer base;
+                        Escribir "Digite base2 de la figura";
+                        leer base2;
+                        Escribir "Digite alto de la figura";
+                        leer alto;
+                        trapecio<-(base*base2)/2*alto;	
+                        Escribir "el area del trapecio es  ", trapecio;
+                            
+                    FinSegun
+                    
+                  Hasta Que opcion==4
+                  
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+            <div class="row">
+              <div class="resume-item">
+                
+                  <h4>Ejercicio 10</h4>
+                  <p><em>El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una 
+                    aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga 
+                    los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, 
+                    retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los 
+                    retiros el valor no puede ser mayor al valor que tiene en la cuenta.</em></p>
+                  <pre>Proceso Ejercicio10
+  
+  
+                    definir  opcion, cuenta,monto,retiro, saldo Como Entero;;
+                    Definir nombre, documento Como Caracter;;
+                    saldo <- 0;
+                    
+                    Escribir "BIENVENIDOS A SU BANCO FIEL";
+                  
+                      
+                      Escribir "Digite nombre y apellido del titular";
+                      leer nombre;
+                      Escribir "Digite numero de documento del titular";
+                      leer documento;
+                      Repetir		
+                      Escribir "Seleccione la opcion a realizar";
+                        Escribir "1. Consignaciones";
+                        Escribir "2. Retiros";
+                        Escribir "3. Consultas";
+                        Escribir "4. Salir";
+                      
+                    leer opcion;
+                    
+                    Segun opcion Hacer
+                      1:
+                        Escribir nombre," Usted a elegido consignar";
+                        Escribir "Digite el numero de su cuenta";
+                        leer cuenta;
+                        Escribir "El valor minimo a consignar es de $10.000";
+                        Escribir "Digite valor a consignar";
+                        leer monto;
+                        Si monto>=10.000 Entonces
+                          Escribir "Transaccion exitosa";
+                        SiNo
+                          Escribir "El valor ingresado no coincide con los parametros establecidos";
+                        FinSi
+                        saldo <- saldo+monto;
+                        esperar 2 Segundos;
+                        Borrar Pantalla;
+                        
+                      2:
+                        Escribir nombre," Digite el numero de su cuenta";
+                        leer cuenta;
+                        Escribir "Digite el valor a retirar";
+                        leer retiro;
+                        Si retiro<=saldo Entonces
+                          Escribir "Transaccion realizada con exito";
+                          saldo<-saldo-retiro;
+                          esperar 2 Segundos;
+                          Borrar Pantalla;
+                        SiNo
+                          Escribir "No cuenta con fondos suficientes para la transaccion";
+                          esperar 2 Segundos;
+                          Borrar Pantalla;
+                        FinSi
+                                            
+                      3: 
+                        Escribir nombre,"Usuario(a) de la cuenta No ", cuenta;
+                        Escribir "Su saldo es de $",saldo;
+                        esperar 2 Segundos;
+                        Borrar Pantalla;
+                            
+                    FinSegun
+                    
+                  Hasta Que opcion==4
+                  
+                  FinProceso
+                  </pre>
+                  
+                </div>
+            </div><br><br>
+        </section>
+
+    </main>
+  
+   
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Diana Lucero</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+    </footer>
+  
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    
+    <script src="assets/js/main.js"></script>
+  
+  </body>
+  
+  </html>

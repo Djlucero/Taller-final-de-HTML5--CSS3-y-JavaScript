@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PseInt - Diana Lucero-Taller 5</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+ 
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+ 
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Diana Lucero</a></h1>
+    
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de Mi</a></li>
+          <li><a class="active" href="tallerespseint.html">PseInt</a></li>
+          <li><a href="pseint1.html">Taller 1</a></li>
+          <li><a href="pseint2.html">Taller 2</a></li>
+          <li><a href="pseint3.html">Taller 3</a></li>
+          <li><a href="pseint4.html">Taller 4</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="header-social-links">E
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main id="main">
+
+    
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Taller 5</h2>
+            <h2>PseInt Funciones</h2>
+            
+          </div>
+  
+          <div class="row">
+            <div class="resume-item">
+              <h4>Link github</h4>
+              
+
+    
+              <link src=https://github.com/Djlucero/CanterasNivel1TallerGit.git>github</link>
+            </div>
+          </div> <br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Punto 1</h4>
+                <p><em>Organizar todos los puntos del taller de condicionales en modo funciones.
+                </em></p>
+                <h4>Ejercicio 1</h4>
+                <pre>Proceso miFuncion
+                  Definir persona Como Caracter;
+                  Dimension persona[1];
+                  
+                  persona[0] <- capturarDato("Digite su edad");
+                  imprimirpersona(persona);
+                FinProceso
+                
+                SubProceso dato <- capturarDato(mensaje)
+                  Definir dato Como Caracter;
+                  Escribir mensaje;
+                  Leer dato;
+                FinSubProceso
+                
+                SubProceso imprimirpersona(datos)
+                  Limpiar Pantalla;
+                  Escribir datos[0];
+                  Si ConvertirANumero(datos[0]) >= 18 Entonces
+                    Escribir "Usted es mayor de edad";
+                  SiNo
+                    Escribir "Usted no es mayor de edad";
+                  FinSi
+                  
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 2</h4>
+                
+                <pre>Proceso miFuncion
+                  Definir persona Como Caracter;
+                  Dimension persona[1];
+                  
+                  persona[0] <- capturarDato("Digite su edad");
+                  imprimirpersona(persona);
+                FinProceso
+                
+                SubProceso dato <- capturarDato(mensaje)
+                  Definir dato Como Caracter;
+                  Escribir mensaje;
+                  Leer dato;
+                FinSubProceso
+                
+                SubProceso imprimirpersona(datos)
+                  Limpiar Pantalla;
+                  Escribir datos[0];
+                  Si ConvertirANumero(datos[0]) >= 18 Entonces
+                    Escribir "Usted es mayor de edad";
+                  SiNo
+                    Escribir "Usted todavia es un niño(a)";
+                  FinSi
+                  
+                FinSubProceso
+                
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 3</h4>
+                
+                <pre>Proceso Ejercicio3
+
+                  Definir persona Como Caracter;
+                  Dimension persona[3];
+                  
+                  persona[0] <- capturarDato("Digite su Nombre");
+                  persona[1] <- capturarDato("Digite su Apellido");
+                  persona[2] <- capturarDato("Digite su Edad");
+                  
+                  imprimirpersona(persona);
+                FinProceso
+                
+                SubProceso dato <- capturarDato(mensaje)
+                  Definir dato Como Caracter;
+                  Escribir mensaje;
+                  Leer dato;
+                FinSubProceso
+                
+                SubProceso imprimirpersona(datos)
+                  Limpiar Pantalla;
+                  Escribir datos[0];
+                  Si ConvertirANumero(datos[2]) >= 18 Entonces
+                    Escribir "Usted es mayor de edad, por lo tanto puede entrar a la fiesta.";
+                  SiNo
+                    Escribir "Usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+                  FinSi
+                  
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 4</h4>
+                <pre>SubProceso llenarpelicula(pelicula)
+                  definir i Como Entero;
+                  para i<-0 hasta 8 Con Paso 1 Hacer
+                    Escribir "Digite pelicula a consultar";
+                    Leer pelicula[i];
+                    si pelicula[i]==pelicula[] Entonces
+                      Escribir "usted a alquilado la pelicula ",pelicula[i];
+                    sino 
+                      Escribir "la pelicula no se encuentra disponible";
+                    FinSi
+                  FinPara
+                FinSubProceso
+                
+                SubProceso listarpeliculas(peliculas)
+                  Definir i Como Entero;
+                  para i<-0 hasta 8 Con Paso 1 Hacer
+                    Escribir peliculas[i];
+                  FinPara
+                  
+                FinSubProceso
+                
+                SubProceso devolucionpelicula(peliculas,novedad)
+                  Escribir " Digite Pelicula a Devolver";
+                  leer peliculas[];
+                  escribir "la pelicula ha sido ingresada con exito";
+                  Escribir "Digite Comentarios y Observaciones";
+                  leer novedad;
+                  Limpiar Pantalla;
+                  Escribir "la pelicula presenta las siguientes novedades ", novedad;
+                  
+                FinSubProceso
+                
+                Proceso Ejercicio4
+                  
+                  Definir nombre, peliculas, novedad,comentario Como Caracter;
+                  definir opcion Como Entero;;
+                  Definir observacion Como Logico;
+                  Dimension peliculas[9];
+                  
+                  novedad<- " ";
+                  
+                  peliculas[0] <- "1. La Vida es Bella";
+                  peliculas[1] <- "2. Atrapame si puedes";
+                  peliculas[2] <- "3. Encanto";
+                  peliculas[3] <- "4. Sing 2";
+                  peliculas[4] <- "5. Spaider-Man";
+                  peliculas[5] <- "6. Scream";
+                  peliculas[6] <- "7. Amenaza bajo el agua";
+                  peliculas[7] <- "8. Matrix";
+                  peliculas[8] <- "9. kings-Man";
+                  
+                  
+                  Escribir "VIDEOTIENDA EL PORVENIR";
+                  
+                  Escribir "Digite nombre y apellido";
+                  leer nombre;
+                
+                  Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                  Escribir "1.Alquilar Pelicula";
+                  Escribir "2. Consultar peliculas disponibles ";
+                  Escribir "3. Recibir pelicula y comentarios";
+                  leer opcion;
+                  
+                  Segun opcion Hacer
+                    1:
+                      llenarpelicula(peliculas);
+                    2:
+                      Escribir "Peliculas Disponibles";
+                      listarpeliculas(peliculas);
+                    3:
+                      Escribir " Recibir Peliculas y Comentarios";
+                      devolucionpelicula(peliculas,novedad);	
+                      
+                      
+                      esperar 2 Segundos;
+                      Limpiar Pantalla;	
+                  FinSegun
+                  
+                
+                  
+                  
+                FinProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 5</h4>
+                
+                <pre>Proceso Ejercicio5
+
+                  Definir nombre, medicamentos, devolucion, caracteristica Como Caracter;
+                  definir opcion Como Entero;;
+                  Definir comentarios Como Logico;
+                  Dimension  medicamentos[8];
+                  caracteristica<-" ";
+                  
+                  Escribir "BIENVENIDOS A SU DROGUERIA MI SALUD";
+                  
+                  Escribir "Digite nombre y apellido";
+                  leer nombre;
+                  
+                  Repetir
+                  Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                  Escribir "1. COMPRA DE PRODUCTO";
+                  Escribir "2. CONSULTAR PRECIOS ";
+                  Escribir "3. DEVOLUCIONES";
+                  Escribir "4. SALIR";
+                  leer opcion;
+                  
+                  Segun opcion Hacer
+                    1:
+                      llenarmedicamento(medicamentos,caracteristica);
+                      
+                      
+                    2:
+                      Escribir "CONSULTA DE PRECIOS";
+                      listarmedicamentos(medicamentos);
+                      
+                      
+                    3:
+                      Escribir " DEVOLUCIONES";
+                      devolvermedicamento(medicamentos);
+                      
+                      Escribir " Desea añadir un comentario? (digite V o F)";
+                      Leer comentarios;
+                      Si comentarios= Verdadero Entonces
+                        Escribir "Digite Comentarios y Observaciones";
+                        leer devolucion;
+                        Limpiar Pantalla;
+                        Escribir "el Medicamento ", medicamentos[]," presenta novedad de devolucion por";
+                        Escribir devolucion;
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;
+                      FinSi
+                      
+                    
+                  FinSegun
+                  Hasta Que opcion==4;
+                  
+                FinProceso
+                
+                SubProceso llenarmedicamento(medicamentos,caracteristica)
+                  definir i Como Entero;
+                  para i<-1 hasta 1 Con Paso 1 Hacer
+                    Escribir "digite nombre del producto";
+                    Leer medicamentos[i];
+                    Escribir "digite caracteristicas del producto ",caracteristica;
+                    leer caracteristica;
+                    Limpiar Pantalla;
+                    Escribir "el producto ", medicamentos[i], " con caracteristicas ";
+                    Escribir caracteristica, " sera entregado en caja al momento de su facturacion";
+                    Escribir "Muchas Gracias Por Su Compra";
+                    Esperar 2 Segundos;
+                    Limpiar Pantalla;
+                  FinPara
+                  
+                FinSubProceso
+                
+                SubProceso listarmedicamentos(medicamentos)
+                  Definir i Como Entero;
+                  para i<-0 hasta 7 Con Paso 1 Hacer
+                    medicamentos[0] <- "1.Ibuprofeno-200 mg PRECIO: $7500";
+                    medicamentos[1] <- "2.Acido acetilsalicílico 500 mg PRECIO $20500";
+                    medicamentos[2] <- "3.Morfina-10 mg (sulfato de morfina) PRECIO $18900";
+                    medicamentos[3] <- "4.Dexametasona Inyección: 4 mg PRECIO $12500";
+                    medicamentos[4] <- "5.Albendazol (masticables): 400 mg PRECIO $25500";
+                    medicamentos[5] <- "6.Amoxicilina 250 mg PRECIO $30000";
+                    medicamentos[6] <- "7.Azitromicina 500 mg PRECIO $13500";
+                    medicamentos[7] <- "pirazinamida 400 mg PRECIO $15000";
+                    Escribir medicamentos[i];
+                    FinPara
+                  Escribir " ";
+                FinSubProceso
+                
+                SubProceso devolvermedicamento(medicamentos)
+                  Escribir " Digite el nombre del producto a devolver";
+                leer medicamentos[];
+                  
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 6</h4>
+                
+                <pre>Proceso Ejercicio6
+
+                  Definir nombre, documento, placa, modelo, mecanico,inventario, observaciones,arreglo Como Caracter;
+                  definir opcion Como Entero;;
+                  Definir repuestos, devolucion Como Logico;
+                  Dimension dato[5];
+                  
+                  Repetir
+                    
+                  Escribir "BIENVENIDOS TALLER DE MOTOS EL MAQUINISTA";
+                  
+                  Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                  Escribir "1. REGISTRO DE INGRESO";
+                  Escribir "2. REGISTRO DE SALIDA ";
+                  Escribir "3. SALIR";
+                  leer opcion;
+                  
+                  Segun opcion Hacer
+                    1:
+                      Escribir "REGISTRO DE INGRESO";
+                      nombre <- capturar(1);
+                      documento<-capturarcedula(1);
+                      placa <- capturarplaca(1);
+                      modelo<-capturarmodelo(1);
+                      observaciones<-capturarobservaciones(1);
+                        
+                      Limpiar Pantalla;
+                      Escribir "El señor(a) ",nombre, " identificado(a) con cedula No. ";
+                      Escribir documento, " ingresa la motocicleta de modelo; ";
+                      Escribir modelo, " y placa numero ", placa;
+                      Escribir "con las siguientes observaciones: ", observaciones;
+                      
+                      Esperar 2 Segundos;
+                      Limpiar Pantalla;		
+                      
+                    2:
+                      Escribir "REGISTRO DE SALIDA";
+                      mecanico<-capturarmecanico(1);
+                      placa <- capturarplaca(1);
+                      arreglo<-capturararreglo(1);
+                      repuestos<-capturarepuesto(1);
+                      Si repuestos= Verdadero Entonces;
+                        Escribir "Digite inventario cambio de repuestos";
+                        leer inventario;
+                      Limpiar Pantalla;
+                      Escribir "el Mecanico ", mecanico," indica que a la moto de placas ", placa;
+                      Escribir "se le realizo arreglo con un inventario de los siguientes";
+                      Escribir "repuestos ", inventario, " los cuales fueron usados para la reparación del vehiculo";
+                      Escribir "quedando en perfecto estado";
+                    FinSi
+                    
+                    Esperar 2 Segundos;
+                    Limpiar Pantalla;	
+                        FinSegun
+                  
+                      Hasta Que opcion==3;
+                      Escribir "Hasta pronto";
+                  
+                FinProceso
+                
+                SubProceso datos<-capturar(nombre)
+                  Definir datos Como Caracter;
+                Escribir "Digite nombre y apellido del cliente",nombre;
+                  leer datos;
+                FinSubProceso
+                
+                SubProceso datos<-capturarcedula(documento)
+                  Definir datos Como Caracter;
+                  Escribir "Digite numero documento identidad del cliente",documento;
+                  leer datos;
+                FinSubProceso
+                
+                SubProceso datos<-capturarplaca(placa)
+                  Definir datos Como Caracter;
+                  Escribir "Digite numero de Placa de la moto",placa;
+                  leer datos;
+                FinSubProceso
+                
+                SubProceso datos<-capturarmodelo(modelo)
+                  Definir datos Como Caracter;
+                  Escribir "Digite modelo de la moto",modelo;
+                  leer datos;
+                FinSubProceso
+                
+                SubProceso datos<-capturarobservaciones(observaciones)
+                  Definir datos Como Caracter;
+                  Escribir "Digite observaciones por parte del cliente",observaciones;
+                  leer datos;
+                
+                FinSubProceso
+                
+                SubProceso datos<-capturarmecanico(mecanico)
+                  Definir datos Como Caracter;
+                  Escribir "Digite nombre del mecanico que realiaza la reparación",mecanico;
+                  leer datos;	
+                FinSubProceso
+                
+                SubProceso datos<-capturararreglo(arreglo)
+                  Definir datos Como Caracter;
+                  Escribir "Digite arreglos realizados por el mecanico",arreglo;
+                  leer datos;	
+                FinSubProceso
+                
+                SubProceso datos<-capturarepuesto(repuestos)
+                  Definir datos Como Logico;
+                  Escribir " Desea añadir un inventario de respuestos? (digite V o F)",repuestos;
+                  Leer datos;
+                  
+                  FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 7</h4>
+                <p><em>Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.
+                </em></p>
+                <pre>Proceso Ejercicio7
+
+                  Escribir "SECRETARIA DE SALUD";
+                  Definir persona Como Caracter;
+                  Definir imc, num Como Real;
+                  Dimension persona[2], num[2];
+                  capturar(persona);
+                  capturarNum(num);
+                  imc <- calculo(num);
+                  resultado(imc, persona);
+                FinProceso
+                
+                SubProceso capturar(dato Por Referencia)
+                  dato[0] <- capturarDatos("Digite su Nombre y Apellido:");
+                  dato[1] <- capturarDatos("Digite numero de documento de identidad:");
+                FinSubProceso
+                
+                SubProceso dato <- capturarDatos(mensaje)
+                  Definir dato Como Caracter;
+                  Escribir mensaje;
+                  Leer dato;
+                FinSubProceso
+                
+                SubProceso capturarNum(dato2 Por Referencia)
+                  dato2[0] <- capturarDatos2("Digite su peso en kilogramos?:");
+                  dato2[1] <- capturarDatos2("Digite su estatura en metros");
+                FinSubProceso
+                
+                SubProceso dato2 <- capturarDatos2(mensaje2)
+                  Definir dato2 Como Real;
+                  Escribir mensaje2;
+                  Leer dato2;
+                FinSubProceso
+                
+                SubProceso imc <- calculo(num)
+                  Definir imc Como Real;
+                  imc <- num[0]/(num[1] * num[1]);
+                FinSubProceso
+                
+                SubProceso resultado(imc Por Referencia, persona)
+                    
+                  Si (imc<18.5) Entonces;
+                    Escribir "Bajo de Peso";
+                  SiNo
+                    Si (imc >= 18.5 y imc <= 24.9) Entonces
+                      Escribir "Peso Normal";
+                      
+                    SiNo
+                      Si (imc >=25.0 y imc <= 29.9) Entonces
+                        Escribir "Preobecidad o Sobrepeso";	
+                      SiNo
+                        Si (imc >= 30.0 y imc <= 34.9) Entonces
+                          Escribir "Obecidad Clase I";
+                        SiNo
+                          Si (imc >= 35.0 y imc <=39.9) Entonces
+                            Escribir "Obecidad clase II";
+                          SiNo
+                            Si (imc >=40) Entonces
+                              Escribir "Obecidad clase III";
+                            FinSi
+                          FinSi
+                        FinSi
+                      FinSi
+                      
+                    FinSi
+                  FinSi
+                  
+                  
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 8</h4>
+                
+                <pre>Proceso Ejercicio8
+
+                  Definir nombre, contactos, documento Como Caracter;
+                  Definir opcion Como Entero; 
+                  Dimension contactos[3,3];	
+                  opcion <- 0;	
+                      
+                  Escribir "BIENVENIDOS PASTELERIA DELICATESE";
+                  Escribir "para ofecerte un mejor servicio Digita la siguiente informacion";
+                  Escribir "Digite nombre y apellido del cliente";
+                  leer nombre;
+                  Escribir "Digite numero documento identidad del cliente";
+                  leer documento;
+                  Repetir
+                    opcion <- menu();
+                    consultar();
+                  
+                  
+                Hasta Que opcion==6
+                
+                FinProceso
+                
+                
+                  
+                  
+                  
+                  SubProceso datos <- solicitarDatos(mensaje)
+                    Definir datos Como Caracter;
+                    Escribir mensaje, Sin Saltar;
+                    Leer datos;
+                FinSubProceso
+                
+                SubProceso opcion <- menu()
+                  Definir opcion Como Entero;
+                  Escribir "ESCOJA UNA DE LAS SIGUIENTES OPCIONES";
+                  Escribir "1. Torta festival cantidad 12 porciones decoracion crema chantilli";
+                  Escribir "2. Torta festival cantidad 30 porciones decoracion crema chantilli";
+                  Escribir "3. Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate ";
+                  Escribir "4. Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate ";
+                  Escribir "5. Torta 3 leches cantidad 12 porciones decoracion crema leche";
+                  Escribir "6. Salir";
+                  
+                FinSubProceso
+                
+                SubProceso consultar()
+                  Definir opcion,cantidad,precio,total Como Entero;
+                  Leer opcion;
+                    Segun opcion Hacer
+                    1:
+                      
+                      Escribir "Usted ha elegido Torta festival cantidad 12 porciones decoracion crema chantilli ";
+                      Escribir "Ingrese cantidad";
+                      leer cantidad;
+                      Escribir "Digite precio";
+                      leer precio;
+                      total<-cantidad*precio;	
+                      Escribir "Buen dia su pedido es";
+                      Escribir "Torta festival cantidad 12 porciones decoracion crema chantilli ";
+                      Escribir "valor a cancelar ", total;
+                      
+                    2:
+                      Escribir "Usted ha elegido Torta festival cantidad 30 porciones decoracion crema chantilli ";
+                      Escribir "Ingrese cantidad";
+                      leer cantidad;
+                      Escribir "Digite precio";
+                      leer precio;
+                      total<-cantidad*precio;	
+                      Escribir "Buen dia su pedido es";
+                      Escribir "Torta festival cantidad 30 porciones decoracion crema chantilli ";
+                      Escribir "valor a cancelar ", total;
+                      
+                    3: 
+                      Escribir "Usted ha elegido Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate ";
+                      Escribir "Ingrese cantidad";
+                      leer cantidad;
+                      Escribir "Digite precio";
+                      leer precio;
+                      total<-cantidad*precio;	
+                      Escribir "Buen dia su pedido es";
+                      Escribir "Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate  ";
+                      Escribir "valor a cancelar ", total;
+                      
+                    4:
+                      Escribir "Usted ha elegido Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate  ";
+                      Escribir "Ingrese cantidad";
+                      leer cantidad;
+                      Escribir "Digite precio";
+                      leer precio;
+                      total<-cantidad*precio;	
+                      Escribir "Buen dia su pedido es";
+                      Escribir "Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate  ";
+                      Escribir "valor a cancelar ", total;
+                    5:
+                      Escribir "Usted ha elegido Torta 3 leches cantidad 12 porciones decoracion crema leche  ";
+                      Escribir "Ingrese cantidad";
+                      leer cantidad;
+                      Escribir "Digite precio";
+                      leer precio;
+                      total<-cantidad*precio;	
+                      Escribir "Buen dia su pedido es";
+                      Escribir "Torta 3 leches cantidad 12 porciones decoracion crema leche  ";
+                      Escribir "valor a cancelar ", total;
+                  FinSegun
+                  esperar 2 Segundos;
+                  
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 9</h4>
+                
+                <pre>Proceso Ejercicio9
+
+
+                  Definir opcion Como Entero;
+                  
+                  Escribir "BIENVENIDOS A SU CLASE DE GEOMETRIA";
+                  
+                  Escribir "Seleccione la opcion de la figura a calcular";
+                  Escribir "1.Rectangulo";
+                  Escribir "2. Triangulo";
+                  Escribir "3. Trapecio";
+                  Escribir "4. Salir";
+                    
+                  leer opcion;
+                  Segun opcion Hacer
+                    1:
+                      Definir num, area Como Real;
+                      Dimension num[2];
+                      capturar(num);
+                      area <- calculoRectangulo(num);
+                      respRectangulo(area);
+                    2:
+                      Definir num, area Como Real;
+                      Dimension num[2];
+                      capturar(num);
+                      area <- calculoTriangulo(num);
+                      respTriangulo(area);		
+                    3:
+                      Definir num, area Como Real;
+                      Dimension num[3];
+                      capturar2(num);
+                      area <- calculoTrapecio(num);
+                      respTrapecio(area);				
+                    4:
+                      Escribir "¡Hasta la próxima!";
+                      
+                    De Otro Modo:
+                      Escribir "La opción no es valida";
+                  FinSegun
+                  
+                FinProceso
+                
+                
+                SubProceso capturar(dato Por Referencia)
+                  dato[0] <- capturarDatos("Digite base en cm:");
+                  dato[1] <- capturarDatos("Digite altura en cm:");
+                FinSubProceso
+                
+                SubProceso capturar2(dato Por Referencia)
+                  dato[0] <- capturarDatos("Digite base mayor en cm:");
+                  dato[1] <- capturarDatos("Digite base menor en cm:");
+                  dato[2] <- capturarDatos("Digite altura en cm:");
+                FinSubProceso
+                
+                SubProceso dato <- capturarDatos(mensaje)
+                  Definir dato Como Real;
+                  Escribir mensaje;
+                  Leer dato;
+                FinSubProceso
+                
+                SubProceso area <- calculoRectangulo(num)
+                  Definir area Como Real;
+                  area <- num[0] * num[1];
+                FinSubProceso
+                
+                SubProceso respRectangulo(area Por Referencia)
+                  Escribir "Area del rectángulo = ", area, " cm^2";
+                FinSubProceso
+                
+                SubProceso area <- calculoTriangulo(num)
+                  Definir area Como Real;
+                  area <- (num[0] * num[1])/2;
+                FinSubProceso
+                
+                SubProceso respTriangulo(area Por Referencia)
+                  Escribir "Area del Tríangulo = ", area, " cm^2";
+                FinSubProceso
+                
+                SubProceso area <- calculoTrapecio(num)
+                  Definir area Como Real;
+                  area <- (num[2] * (num[0] * num[1]))/2;
+                FinSubProceso
+                
+                SubProceso respTrapecio(area Por Referencia)
+                  Escribir "Area del Trapecio = ", area, " cm^2";
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Ejercicio 10</h4>
+                
+                <pre>Proceso Ejercicio10
+
+
+                  definir  opcion, persona, mensaje,cuenta,monto,retiro, saldo Como Entero;;
+                  Definir nombre, documento Como Caracter;
+                  cuenta<-0;
+                  saldo<-0;
+                  monto<-0;
+                  retiro<-0;
+                  opcion<-0;
+                
+                  
+                  Escribir "BIENVENIDOS A SU BANCO FIEL";
+                
+                    
+                    Escribir "Digite nombre y apellido del titular";
+                    leer nombre;
+                    Escribir "Digite numero de documento del titular";
+                    leer documento;
+                    Repetir		
+                    Escribir "Seleccione la opcion a realizar";
+                      Escribir "1. Consignaciones";
+                      Escribir "2. Retiros";
+                      Escribir "3. Consultas";
+                      Escribir "4. Salir";
+                    
+                      
+                  
+                      consignarvalor(cuenta,monto,saldo,retiro);
+                      
+                      esperar 2 Segundos;
+                      Limpiar Pantalla;
+                  
+                    Hasta Que opcion==4										
+                  FinProceso
+                  
+                  
+                  
+                SubProceso consignarvalor(cuenta,monto,saldo,retiro)
+                  Definir opcion Como Entero;
+                  saldo<-0;
+                  leer opcion;
+                  
+                  Segun opcion Hacer
+                  
+                        1:
+                          Escribir "Usted a elegido consignar";
+                          Escribir "Digite el numero de su cuenta";
+                          leer cuenta;
+                          Escribir "El valor minimo a consignar es de $10.000";
+                          Escribir "Digite valor a consignar";
+                          leer monto;
+                          Si monto>=10.000 Entonces
+                            Escribir "Transaccion exitosa";
+                          SiNo
+                            Escribir "El valor ingresado no coincide con los parametros establecidos";
+                          FinSi
+                          saldo <- saldo+monto;
+                          esperar 2 Segundos;
+                          Borrar Pantalla;
+                          
+                        2:
+                          Escribir " Digite el numero de su cuenta";
+                          leer cuenta;
+                          Escribir "Digite el valor a retirar";
+                          leer retiro;
+                          Si retiro<=saldo Entonces
+                            Escribir "Transaccion realizada con exito";
+                            saldo<-saldo-retiro;
+                            esperar 2 Segundos;
+                            Borrar Pantalla;
+                          SiNo
+                            Escribir "No cuenta con fondos suficientes para la transaccion";
+                            esperar 2 Segundos;
+                            Borrar Pantalla;
+                          FinSi
+                          
+                        3: 
+                          Escribir "Usuario(a) de la cuenta No ", cuenta;
+                          Escribir "Su saldo es de $",saldo;
+                          esperar 2 Segundos;
+                          Borrar Pantalla;
+                          
+                      
+                      FinSegun
+                
+                
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                <h4>Punto 2</h4>
+                <p><em>Organizar los puntos 6, 7 y 8 del taller de ciclos en modo funciones.
+                </em></p>
+                <h4>Ejercicio 6</h4>
+                <pre>Proceso ejercicio7ciclos
+
+                  Definir contactos, nombre Como Caracter;
+                  Dimension contactos[5,5];	
+                  Definir opcion, nregistros Como Entero;
+                  opcion <- 0;	
+                  inicializandoRegistros(contactos);
+                  Repetir
+                    opcion <- menu();	
+                    Segun opcion Hacer
+                      1:
+                        
+                        LlenarRegistros(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;
+                      2:
+                        EliminarContacto(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;
+                      3:
+                        BuscarContacto(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;								
+                      4: 
+                        Escribir "Hasta Pronto";
+                      De Otro Modo:
+                        Escribir "La Opcion Elegida No Es Valida ";
+                    FinSegun
+                  Hasta Que opcion = 4
+                  
+                  
+                FinProceso
+                  
+                  
+                
+                SubProceso datos <- solicitarDatos(mensaje)
+                  Definir datos Como Caracter;
+                  Escribir mensaje, Sin Saltar;
+                  Leer datos;
+                FinSubProceso
+                
+                SubProceso opcion <- menu()
+                  Definir opcion Como Entero;
+                  Escribir 'PARQUEADERO EL GUARDIAN';
+                  Escribir '(1) Ingreso de Vehiculos';
+                  Escribir '(2) Salida de Vehiculos";
+                  Escribir '(3) Consultar';
+                  Escribir '(4) salir';
+                  Leer opcion;
+                FinSubProceso
+                
+                SubProceso inicializandoRegistros(contactos Por Referencia)
+                  Definir i, j Como Entero;
+                  Para i<- 0 Hasta 4 Con Paso 1 Hacer
+                    Para j<- 0 Hasta 4 Con Paso 1 Hacer
+                      contactos[i,j] <- "";
+                    FinPara
+                  FinPara
+                FinSubProceso
+                
+                SubProceso LlenarRegistros(contactos Por Referencia)
+                  Definir i, j, contador  Como Entero;
+                  Definir existe Como Logico;
+                  Definir nombreCompleto, telefono, placa, marca, numcontacto, resp Como Caracter;
+                  i <- 0;
+                  contador <-1;
+                  Repetir
+                    numcontacto <- ConvertirATexto(i+1);
+                    nombreCompleto <- solicitarDatos(Concatenar(Concatenar("Digite nombre y apellido de usuario ", numcontacto), " a registrar: "));
+                    contactos[i,0] <- nombreCompleto;
+                    telefono <- solicitarDatos(Concatenar(Concatenar("Digite numero de telefono", numcontacto), " a registrar: "));
+                    contactos[i,1]<- telefono;
+                    placa <- solicitarDatos(Concatenar(Concatenar("Digite placa del vehiculo", numcontacto), " a registrar: "));
+                    contactos[i,2] <- placa;
+                    marca <- solicitarDatos(Concatenar(Concatenar("Digite marca del vehiculo ", numcontacto), " a registrar: "));
+                    contactos[i,3] <- marca;		
+                    resp <- solicitarDatos("Desea registrar otro vehiculo? escriba s para su y n para no ");
+                    Si i >= 2 y resp ="s" Entonces			
+                      Escribir "Parqueadero Lleno";
+                    FinSi
+                    si resp="n" Entonces
+                      i<-3;
+                    FinSi		
+                    i <- i+1;
+                  Hasta Que i>2
+                FinSubProceso
+                
+                SubProceso EliminarContacto(contactos)
+                  Definir placa Como Caracter;
+                  Definir  i, j Como Entero;
+                  Definir eliminado Como Logico;
+                  eliminado <- Falso;
+                  placa <- solicitarDatos("Digite numero de Placa del vehiculo: ");
+                  Para i<-0 Hasta 4 Con Paso 1 Hacer
+                    para j<-0 Hasta 4 Con Paso 1 Hacer
+                      si placa = contactos[i,2] Entonces
+                        contactos[i,0] <- "";
+                        contactos[i,1] <- "" ;
+                        contactos[i,2] <- "" ;
+                        contactos[i,3] <- "" ;
+                        contactos[i,4] <- "" ;
+                        eliminado <- Verdadero;
+                      FinSi
+                    FinPara
+                  FinPara;
+                  Si eliminado = Falso Entonces
+                    Escribir "El vehiculo no se encuentra en la base de datos ";
+                  SiNo
+                    Escribir "El vehiculo ha salido con exito";
+                  FinSi
+                FinSubProceso
+                
+                SubProceso BuscarContacto(contactos)
+                  Definir placa Como Caracter;
+                  Definir  i, j Como Entero;
+                  Definir existe Como Logico;
+                  existe <- Falso;
+                  placa <- solicitarDatos("Digite el placa del vehiculo a buscar: ");
+                  Para i<-0 Hasta 2 Con Paso 1 Hacer
+                    para j<-0 Hasta 2 Con Paso 1 Hacer
+                      si placa = contactos[i,2] Entonces
+                        Escribir contactos[i,j] ;
+                        existe <- Verdadero;
+                      FinSi
+                    FinPara
+                  FinPara;
+                  Si existe= Falso Entonces
+                    Escribir "Este contacto no se encuentra registrado ";
+                  FinSi	
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 7</h4>
+                <pre>Proceso ejercicio7ciclos
+
+                  Definir contactos, nombre Como Caracter;
+                  Dimension contactos[5,5];	
+                  Definir opcion, nregistros Como Entero;
+                  opcion <- 0;	
+                  inicializandoRegistros(contactos);
+                  Repetir
+                    opcion <- menu();	
+                    Segun opcion Hacer
+                      1:
+                        
+                        LlenarRegistros(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;
+                      2:
+                        EliminarContacto(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;
+                      3:
+                        BuscarContacto(contactos);
+                        Esperar 2 Segundos;
+                        Limpiar Pantalla;								
+                      4: 
+                        Escribir "Hasta Pronto";
+                      De Otro Modo:
+                        Escribir "La Opcion Elegida No Es Valida ";
+                    FinSegun
+                  Hasta Que opcion = 4
+                  
+                  
+                FinProceso
+                  
+                  
+                
+                SubProceso datos <- solicitarDatos(mensaje)
+                  Definir datos Como Caracter;
+                  Escribir mensaje, Sin Saltar;
+                  Leer datos;
+                FinSubProceso
+                
+                SubProceso opcion <- menu()
+                  Definir opcion Como Entero;
+                  Escribir 'PARQUEADERO EL GUARDIAN';
+                  Escribir '(1) Ingreso de Vehiculos';
+                  Escribir '(2) Salida de Vehiculos";
+                  Escribir '(3) Consultar';
+                  Escribir '(4) salir';
+                  Leer opcion;
+                FinSubProceso
+                
+                SubProceso inicializandoRegistros(contactos Por Referencia)
+                  Definir i, j Como Entero;
+                  Para i<- 0 Hasta 4 Con Paso 1 Hacer
+                    Para j<- 0 Hasta 4 Con Paso 1 Hacer
+                      contactos[i,j] <- "";
+                    FinPara
+                  FinPara
+                FinSubProceso
+                
+                SubProceso LlenarRegistros(contactos Por Referencia)
+                  Definir i, j, contador  Como Entero;
+                  Definir existe Como Logico;
+                  Definir nombreCompleto, telefono, placa, marca, numcontacto, resp Como Caracter;
+                  i <- 0;
+                  contador <-1;
+                  Repetir
+                    numcontacto <- ConvertirATexto(i+1);
+                    nombreCompleto <- solicitarDatos(Concatenar(Concatenar("Digite nombre y apellido de usuario ", numcontacto), " a registrar: "));
+                    contactos[i,0] <- nombreCompleto;
+                    telefono <- solicitarDatos(Concatenar(Concatenar("Digite numero de telefono", numcontacto), " a registrar: "));
+                    contactos[i,1]<- telefono;
+                    placa <- solicitarDatos(Concatenar(Concatenar("Digite placa del vehiculo", numcontacto), " a registrar: "));
+                    contactos[i,2] <- placa;
+                    marca <- solicitarDatos(Concatenar(Concatenar("Digite marca del vehiculo ", numcontacto), " a registrar: "));
+                    contactos[i,3] <- marca;		
+                    resp <- solicitarDatos("Desea registrar otro vehiculo? escriba s para su y n para no ");
+                    Si i >= 2 y resp ="s" Entonces			
+                      Escribir "Parqueadero Lleno";
+                    FinSi
+                    si resp="n" Entonces
+                      i<-3;
+                    FinSi		
+                    i <- i+1;
+                  Hasta Que i>2
+                FinSubProceso
+                
+                SubProceso EliminarContacto(contactos)
+                  Definir placa Como Caracter;
+                  Definir  i, j Como Entero;
+                  Definir eliminado Como Logico;
+                  eliminado <- Falso;
+                  placa <- solicitarDatos("Digite numero de Placa del vehiculo: ");
+                  Para i<-0 Hasta 4 Con Paso 1 Hacer
+                    para j<-0 Hasta 4 Con Paso 1 Hacer
+                      si placa = contactos[i,2] Entonces
+                        contactos[i,0] <- "";
+                        contactos[i,1] <- "" ;
+                        contactos[i,2] <- "" ;
+                        contactos[i,3] <- "" ;
+                        contactos[i,4] <- "" ;
+                        eliminado <- Verdadero;
+                      FinSi
+                    FinPara
+                  FinPara;
+                  Si eliminado = Falso Entonces
+                    Escribir "El vehiculo no se encuentra en la base de datos ";
+                  SiNo
+                    Escribir "El vehiculo ha salido con exito";
+                  FinSi
+                FinSubProceso
+                
+                SubProceso BuscarContacto(contactos)
+                  Definir placa Como Caracter;
+                  Definir  i, j Como Entero;
+                  Definir existe Como Logico;
+                  existe <- Falso;
+                  placa <- solicitarDatos("Digite el placa del vehiculo a buscar: ");
+                  Para i<-0 Hasta 2 Con Paso 1 Hacer
+                    para j<-0 Hasta 2 Con Paso 1 Hacer
+                      si placa = contactos[i,2] Entonces
+                        Escribir contactos[i,j] ;
+                        existe <- Verdadero;
+                      FinSi
+                    FinPara
+                  FinPara;
+                  Si existe= Falso Entonces
+                    Escribir "Este contacto no se encuentra registrado ";
+                  FinSi	
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 8</h4>
+                <pre>Proceso ejercicio8
+
+                  Definir contactos, nombre Como Caracter;
+                  Dimension contactos[8,8];	
+                  Definir opcion, nregistros Como Entero;
+                  opcion <- 0;	
+                  inicializandoRegistros(contactos);
+                  Repetir
+                    opcion <- menu();	
+                    Segun opcion Hacer
+                      1:
+                        Limpiar Pantalla;
+                        Escribir '**** Registro Curso ****';;
+                        LlenarRegistros(contactos);
+                      2:
+                        Limpiar Pantalla;
+                        Escribir '*** Consultar Usuarios ***';
+                        BuscarContacto(contactos);
+                      
+                        Escribir "Hasta luego";
+                      De Otro Modo:
+                        Escribir "La opcion elegida no es valida ";
+                    FinSegun
+                  Hasta Que opcion = 3
+                  
+                  
+                FinProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+
+
+          <div class="row">
+            <div class="resume-item">
+                                    
+                    <h4>Punto 3</h4>
+                    <p><em>Organizar todos los puntos del taller de arreglos en modo funciones.
+                    </em></p>
+                    <h4>Ejercicio 1</h4>
+                
+                  <pre>Proceso Ejercicio1
+
+                    Definir num Como Entero;
+                    Dimension num[5];
+                    
+                    impresionumero(num);
+                        
+                  FinProceso
+                  
+                    
+                    SubProceso impresionumero(num)
+                      definir i Como Entero;
+                      para i<- 0 Hasta 4 Con Paso 1 Hacer
+                        Escribir "Digite numero";
+                        leer num[i];
+                      FinPara
+                      Limpiar Pantalla;
+                      para i<-0 Hasta 4 Con Paso 1 hacer
+                        Escribir "[",i,"]","=",num[i];
+                      FinPara
+                      FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 2</h4>
+                <pre>Proceso Ejercicio2
+
+                  Definir i,num,par,impar,indice1,indice2 Como Entero;
+                  indice1<-1;
+                  indice2<-1;
+                  Dimension num[20];
+                  Dimension par[20];
+                  Dimension impar[20];
+                  
+                  pareseimpares(num,par,impar,indice1,indice2);
+                  
+                FinProceso
+                
+                
+                  
+                SubProceso pareseimpares(num,par,impar,indice1,indice2)
+                  definir i Como Entero;
+                    para i<- 0 Hasta 19 Con Paso 1 Hacer
+                      num[i]<-azar(100);
+                    FinPara
+                    ;
+                    para i<-0 Hasta 19 Con Paso 1 hacer
+                      Si num[i] MOD 2==0 Entonces
+                        par[indice1]<-num[i];
+                        indice1<-indice1+1;
+                        
+                      SiNo
+                        impar[indice2]<-num[i];
+                        indice2<-indice2+1;
+                      FinSi
+                      
+                    FinPara
+                    
+                    Escribir "Números pares: ";
+                    si indice1>1 Entonces
+                      para i<-1 hasta indice1-1 con paso 1 Hacer
+                        Escribir sin saltar par[i]," ";
+                        
+                      FinPara
+                    SiNo
+                      Escribir Sin Saltar " ";
+                    FinSi
+                    Escribir " ";
+                    Si indice2 >1 Entonces
+                      Escribir "Números impares: ";
+                      para i <- 1 hasta indice2-1 con paso 1 Hacer
+                        Escribir sin Saltar impar[i] ," ";
+                      FinPara
+                    FinSi
+                    Escribir " ";
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 3</h4>
+                <pre>Proceso Ejercicio3
+
+                  Definir i,num,contador Como Entero;
+                  num<-0;
+                  contador<-0;
+                  
+                  numerosprimos(num,contador);
+                      
+                  
+                  FinProceso
+                  
+                  SubProceso numerosprimos(num,contador)
+                    definir i Como Entero;
+                  para num<- 1 Hasta 1000 Hacer
+                    i<-1;
+                    contador<-0;
+                    Mientras i<=num Hacer
+                      si num mod i == 0 Entonces
+                        contador<-contador+1;
+                      FinSi
+                      i<-i+1;
+                    FinMientras
+                    si contador==2 Entonces
+                      Escribir "el numero ",num, " es primo";
+                    FinSi
+                  FinPara 
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 4</h4>
+                <pre>Proceso Ejercicio4
+
+                  Definir fila, columna Como Entero;
+                  Definir matriz Como Entero;
+                  Dimension matriz[4,5];
+                  fila<-0;
+                  columna<-0;
+                  
+                  matriznumeros(matriz,fila,columna);
+                  impresionmatriz(matriz,fila,columna);
+                  
+                FinProceso
+                
+                
+                  SubProceso matriznumeros(matriz,fila,columna)
+                  matriz[0,0] <- 01;
+                  matriz[0,1] <- 02;
+                  matriz[0,2] <- 03;
+                  matriz[0,3] <- 04;
+                  matriz[0,4] <- 05;
+                  matriz[1,0] <- 06;
+                  matriz[1,1] <- 07;
+                  matriz[1,2] <- 08;
+                  matriz[1,3] <- 09;
+                  matriz[1,4] <- 10;
+                  matriz[2,0] <- 11;
+                  matriz[2,1] <- 12;
+                  matriz[2,2] <- 13;
+                  matriz[2,3] <- 14;
+                  matriz[2,4] <- 15;
+                  matriz[3,0] <- 16;
+                  matriz[3,1] <- 17;
+                  matriz[3,2] <- 18;
+                  matriz[3,3] <- 19;
+                  matriz[3,4] <- 20;
+                  
+                  para fila<-0 hasta 3 con paso 1 Hacer
+                    para columna<-0 hasta 4 con paso 1 Hacer
+                      Escribir matriz[fila,columna]," ",Sin Saltar;
+                    FinPara
+                    Escribir " ";
+                  FinPara
+                
+                  Escribir "     "; 
+                FinSubProceso
+                
+                
+                SubProceso impresionmatriz(matriz,fila,columna)
+                  para fila<-0 hasta 0 con paso 1 Hacer
+                    para columna<-0 hasta 4 con paso 1 Hacer
+                      Escribir matriz[fila,columna]," ",Sin Saltar;
+                    FinPara
+                    Escribir " ";
+                  FinPara
+                  para fila<-1 hasta 1 con paso 1 Hacer
+                    para columna<-4 hasta 0 con paso -1 Hacer
+                      Escribir matriz[fila,columna]," ",Sin Saltar;
+                    FinPara
+                    Escribir " ";
+                    FinPara
+                    para fila<-2 hasta 2 con paso 1 Hacer
+                      para columna<-0 hasta 4 con paso 1 Hacer
+                        Escribir matriz[fila,columna]," ",Sin Saltar;
+                      FinPara
+                      Escribir " ";
+                    FinPara
+                    para fila<-3 hasta 3 con paso 1 Hacer
+                      para columna<-4 hasta 0 con paso -1 Hacer
+                        Escribir matriz[fila,columna]," ",Sin Saltar;
+                      FinPara
+                      Escribir " ";
+                    FinPara
+                    
+                FinSubProceso
+                
+                </pre>
+                
+              </div>
+          </div><br><br>
+
+          <div class="row">
+            <div class="resume-item">
+              
+                
+                <h4>Ejercicio 5</h4>
+                <pre>Proceso Ejercicio5
+
+                  Definir fila, columna Como Entero;
+                  Definir r Como Caracter;
+                  Definir matriz Como Entero;
+                  Dimension matriz[10,10];
+                  fila<-0;
+                  columna<-0;
+                  
+                  impresiontablas();
+                  matriztablasmultiplicar(matriz,fila,columna);
+                  
+                FinProceso
+                
+                
+                SubProceso impresiontablas()
+                  Escribir "          ------------------------------------------------------------";
+                  Escribir "         |                    C O L U M N A S                         |";
+                  Escribir "          ------------------------------------------------------------";
+                  Escribir " ________|  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9   |";
+                  Escribir "|   |  0 | 1x1 | 2x1 | 3x1 | 4x1 | 5x1 | 6x1 | 7x1 | 8x1 | 9x1 | 10x1 |";
+                  Escribir "|   |  1 | 1x2 | 2x2 | 3x2 | 4x2 | 5x2 | 6x2 | 7x2 | 8x2 | 9x2 | 10x2 |";
+                  Escribir "| F |  2 | 1x3 | 2x3 | 3x3 | 4x3 | 5x3 | 6x3 | 7x3 | 8x3 | 9x3 | 10x3 |";
+                  Escribir "| I |  3 | 1x4 | 2x4 | 3x4 | 4x4 | 5x4 | 6x4 | 7x4 | 8x4 | 9x4 | 10x4 |";
+                  Escribir "| L |  4 | 1x5 | 2x5 | 3x5 | 4x5 | 5x5 | 6x5 | 7x5 | 8x5 | 9x5 | 10x5 |";
+                  Escribir "| A |  5 | 1x5 | 2x6 | 3x6 | 4x6 | 5x6 | 6x6 | 7x6 | 8x6 | 9x6 | 10x6 |";
+                  Escribir "| S |  6 | 1x7 | 2x7 | 3x7 | 4x7 | 5x7 | 6x7 | 7x7 | 8x7 | 9x7 | 10x7 |";
+                  Escribir "|   |  7 | 1x8 | 2x8 | 3x8 | 4x8 | 5x8 | 6x8 | 7x8 | 8x8 | 9x8 | 10x8 |";
+                  Escribir "|   |  8 | 1x9 | 2x9 | 3x9 | 4x9 | 5x9 | 6x9 | 7x9 | 8x9 | 9x9 | 10x9 |";
+                  Escribir "|   |  9 | 1x10| 2x10| 3x10| 4x10| 5x10| 6x10| 7x10| 8x10| 9x10| 10x10|";
+                  Escribir " _____________________________________________________________________";
+                  Escribir " ";
+                FinSubProceso
+                
+                
+                SubProceso matriztablasmultiplicar(matriz,fila,columna)
+                  matriz[0,0] <- 1*1;
+                  matriz[0,1] <- 1*2;
+                  matriz[0,2] <- 1*3;
+                  matriz[0,3] <- 1*4;
+                  matriz[0,4] <- 1*5;
+                  matriz[0,5] <- 1*6;
+                  matriz[0,6] <- 1*7;
+                  matriz[0,7] <- 1*8;
+                  matriz[0,8] <- 1*9;
+                  matriz[0,9] <- 1*10;
+                  matriz[1,0] <- 2*1;
+                  matriz[1,1] <- 2*2;
+                  matriz[1,2] <- 2*3;
+                  matriz[1,3] <- 2*4;
+                  matriz[1,4] <- 2*5;
+                  matriz[1,5] <- 2*6;
+                  matriz[1,6] <- 2*7;
+                  matriz[1,7] <- 2*8;
+                  matriz[1,8] <- 2*9;
+                  matriz[1,9] <- 2*10;
+                  matriz[2,0] <- 3*1;
+                  matriz[2,1] <- 3*2;
+                  matriz[2,2] <- 3*3;
+                  matriz[2,3] <- 3*4;
+                  matriz[2,4] <- 3*5;
+                  matriz[2,5] <- 3*6;
+                  matriz[2,6] <- 3*7;
+                  matriz[2,7] <- 3*8;
+                  matriz[2,8] <- 3*9;
+                  matriz[2,9] <- 3*10;
+                  matriz[3,0] <- 4*1;
+                  matriz[3,1] <- 4*2;
+                  matriz[3,2] <- 4*3;
+                  matriz[3,3] <- 4*4;
+                  matriz[3,4] <- 4*5;
+                  matriz[3,5] <- 4*6;
+                  matriz[3,6] <- 4*7;
+                  matriz[3,7] <- 4*8;
+                  matriz[3,8] <- 4*9;
+                  matriz[3,9] <- 4*10;
+                  matriz[4,0] <- 5*1;
+                  matriz[4,1] <- 5*2;
+                  matriz[4,2] <- 5*3;
+                  matriz[4,3] <- 5*4;
+                  matriz[4,4] <- 5*5;
+                  matriz[4,5] <- 5*6;
+                  matriz[4,6] <- 5*7;
+                  matriz[4,7] <- 5*8;
+                  matriz[4,8] <- 5*9;
+                  matriz[4,9] <- 5*10;
+                  matriz[5,0] <- 6*1;
+                  matriz[5,1] <- 6*2;
+                  matriz[5,2] <- 6*3;
+                  matriz[5,3] <- 6*4;
+                  matriz[5,4] <- 6*5;
+                  matriz[5,5] <- 6*6;
+                  matriz[5,6] <- 6*7;
+                  matriz[5,7] <- 6*8;
+                  matriz[5,8] <- 6*9;
+                  matriz[5,9] <- 6*10;
+                  matriz[6,0] <- 7*1;
+                  matriz[6,1] <- 7*2;
+                  matriz[6,2] <- 7*3;
+                  matriz[6,3] <- 7*4;
+                  matriz[6,4] <- 7*5;
+                  matriz[6,5] <- 7*6;
+                  matriz[6,6] <- 7*7;
+                  matriz[6,7] <- 7*8;
+                  matriz[6,8] <- 7*9;
+                  matriz[6,9] <- 7*10;
+                  matriz[7,0] <- 8*1;
+                  matriz[7,1] <- 8*2;
+                  matriz[7,2] <- 8*3;
+                  matriz[7,3] <- 8*4;
+                  matriz[7,4] <- 8*5;
+                  matriz[7,5] <- 8*6;
+                  matriz[7,6] <- 8*7;
+                  matriz[7,7] <- 8*8;
+                  matriz[7,8] <- 8*9;
+                  matriz[7,9] <- 8*10;
+                  matriz[8,0] <- 9*1;
+                  matriz[8,1] <- 9*2;
+                  matriz[8,2] <- 9*3;
+                  matriz[8,3] <- 9*4;
+                  matriz[8,4] <- 9*5;
+                  matriz[8,5] <- 9*6;
+                  matriz[8,6] <- 9*7;
+                  matriz[8,7] <- 9*8;
+                  matriz[8,8] <- 9*9;
+                  matriz[8,9] <- 9*10;
+                  matriz[9,0] <- 10*1;
+                  matriz[9,1] <- 10*2;
+                  matriz[9,2] <- 10*3;
+                  matriz[9,3] <- 10*4;
+                  matriz[9,4] <- 10*5;
+                  matriz[9,5] <- 10*6;
+                  matriz[9,6] <- 10*7;
+                  matriz[9,7] <- 10*8;
+                  matriz[9,8] <- 10*9;
+                  matriz[9,9] <- 10*10;
+                  
+                  para fila<-0 hasta 9 Con Paso 1 Hacer
+                    para columna <-0 hasta 9 Con paso 1 Hacer
+                      
+                    FinPara
+                  
+                  FinPara
+                  
+                  para fila<-0 hasta 9 con paso 1 Hacer
+                    para columna<-0 hasta 9 con paso 1 Hacer
+                      Escribir "digite No.fila";
+                      leer fila;
+                      escribir "digite No. columna";
+                      leer columna;
+                      Escribir "el resultado de la multiplicacion es: ",matriz(fila,columna);
+                      Escribir " ";
+                      esperar 2 Segundos;		
+                    FinPara
+                    
+                  FinPara
+                
+                FinSubProceso
+                </pre>
+                
+              </div>
+          </div><br><br>
+        </section>
+
+    </main>
+  
+    
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Diana Lucero</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+    </footer>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+   
+    <script src="assets/js/main.js"></script>
+  
+  </body>
+  
+  </html>

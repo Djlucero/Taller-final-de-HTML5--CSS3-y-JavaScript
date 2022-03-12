@@ -1,0 +1,759 @@
+@media all and (min-width: 1024px){
+
+header {
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    
+}
+
+nav{
+    width: 20%;
+    height: 160%;
+    float:left;
+  
+    
+}
+
+section {
+    width: 60%;
+    height: 160%;
+    float: left;
+    margin-top: 50px;
+    
+}
+
+aside{
+    width: 20%;
+    height: 160%;
+    float: left;
+}
+
+footer{
+    width: 100%;
+    height: 50%;
+    clear:both
+}
+    
+}
+ 
+h1{
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 8px -5px  5px gray;
+       
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 15px;
+    color:black;
+    background-color:white;
+    width: 190px;
+    border-radius: 5px;
+    opacity: .5;
+}
+
+a:hover{
+    background-color: rgb(156, 154, 154);
+    color: white;
+    float: left;
+}
+
+img{
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    box-shadow: 8px -8px 8px gray;
+    border-top-right-radius: 50px;
+}
+section p{
+    font-size: 20px ;
+   text-align: justify;
+   margin: 0 15px;
+}
+
+section h3{
+    margin-left: 120px;
+}
+
+section h5{
+    margin-left: 150px;
+}
+
+aside p {
+    font-size: 19px;
+    text-align: justify;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.acordeon{
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+}
+
+.active, .acordeon:hover{
+    background-color: rgb(169, 142, 182);
+}
+
+.panel{
+    padding: 0px 20px;
+    display: none;
+    overflow: hidden;
+   
+}
+
+
+a.button{
+    text-align: center;
+    background-color: rgb(253, 250, 252);
+         
+}
+
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+footer p{
+    font-size: 25px;
+    color: gray;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+    
+}
+
+
+
+:root,
+:root.light {
+  --bg-color: #E7F1FE;
+  --text-color: #123;
+  --bg-url:  url("https://st2.depositphotos.com/1029215/5351/v/950/depositphotos_53514185-stock-illustration-abstract-blue-purple-wave-background.jpg");
+  --font-family: 'Press Start 2P', cursive;
+}
+
+:root.dark {
+  --bg-color: #222020;
+  --text-color: #696d7d;
+  --bg-url: url("https://img5.goodfon.com/wallpaper/nbig/d/90/fon-wallpaper-lines-abstract.jpg");
+  --font-family: 'Comic Neue', cursive;
+}
+
+:root.blue {
+  --bg-color: #9fb3c5;
+  --text-color: #1b4377;
+  --bg-url: url("https://media.istockphoto.com/vectors/abstract-vector-background-blue-wavy-vector-id1060034764?k=20&m=1060034764&s=170667a&w=0&h=H6DP7pxAXvUhy_E73iYgm_wxsPJ-97tCLYt3dIxdUR4=");
+  --font-family: 'Comic Neue', cursive;
+}
+
+:root.pink {
+  --bg-color: #b9a4a8;
+  --text-color: #914891;
+  --bg-url: url("https://i.pinimg.com/originals/be/78/05/be7805ef2512cd25bfcdec9e24ae8452.jpg");
+  --font-family: 'Comic Neue', cursive;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #121212;
+      --text-color: #45ADFE;
+    }
+  }
+
+
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  background-image: var(--bg-url);
+  color: var(--text-color);
+  font-family: var(--font-family, "Inter", sans-serif);
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  height: 1vh;
+  box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 8px -5px  5px gray;
+       
+}
+
+
+
+select {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 0.25rem;
+}
+
+
+
+
+}
+
+@media all and (min-width: 641px) and (max-width: 1023px){
+
+    header {
+        width: 100%;
+        height: 70%;
+        
+    }
+    
+    nav{
+        width: 100%;
+        height: 60%;
+        word-spacing: 30px;
+        text-align: center;
+        padding-top: 25px;
+    }
+    
+    section {
+        width: 90%;
+        height: 160%;
+        margin-left: 20px;
+        
+        
+    }
+    
+    aside{
+        width: 35%;
+        height: 160%;
+        
+        
+    }
+
+    .acordeon{
+        background-color: azure;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .active, .acordeon:hover{
+        background-color: rgb(169, 142, 182);
+    }
+    
+    .panel{
+        padding: 0px 20px;
+        display: none;
+        overflow: hidden;
+       
+    }
+    
+    
+    a.button{
+        text-align: center;
+        background-color: rgb(253, 250, 252);
+             
+    }
+    
+    body{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+    
+    footer{
+        width: 100%;
+        height: 50%;
+        clear:both
+    }
+
+
+  
+    
+    h1{
+        font-size: 40px;
+        color:blueviolet;
+        text-align: center;
+        text-shadow: 5px -5px  5px gray;
+        padding: 10px;
+
+    }
+   
+
+    a{
+        font-size: 15px;
+        text-decoration: none;
+        color:black;
+        background-color:lightgrey;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+
+    
+    
+    a:hover{
+        background-color: mediumslateblue;
+        color: aqua;
+        
+    }
+
+
+    
+    
+    img{
+        width: 100px;
+        float: left;
+        margin-left: 15px;
+        box-shadow: 8px -8px 8px gray;
+        border-top-right-radius: 50px;
+    }
+
+    
+    section p{
+        font-size: 22px ;
+       text-align: justify;
+       margin: 0 15px;
+    }
+    
+    section h3{
+        margin-left: 150px;
+    }
+    
+    section h5{
+        margin-left: 150px;
+    }
+    
+    aside p {
+        font-size: 19px;
+        text-align: justify;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+     
+   
+    
+    a.button{
+        text-align: center;
+            
+    }
+    
+    body{
+        background-image: url("https://st2.depositphotos.com/1029215/5351/v/950/depositphotos_53514185-stock-illustration-abstract-blue-purple-wave-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+
+    .acordeon{
+        background-color: azure;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .active, .acordeon:hover{
+        background-color: rgb(169, 142, 182);
+    }
+    
+    .panel{
+        padding: 0px 20px;
+        display: none;
+        overflow: hidden;
+       
+    }
+    
+    
+    a.button{
+        text-align: center;
+        background-color: rgb(253, 250, 252);
+             
+    }
+    
+    body{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+    
+    footer p{
+        font-size: 25px;
+        color: gray;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 10px;
+       
+        
+    }
+
+
+:root,
+:root.light {
+  --bg-color: #E7F1FE;
+  --text-color: #123;
+  --bg-url:  url("https://st2.depositphotos.com/1029215/5351/v/950/depositphotos_53514185-stock-illustration-abstract-blue-purple-wave-background.jpg");
+  --font-family: 'Press Start 2P', cursive;
+}
+
+:root.dark {
+  --bg-color: #222020;
+  --text-color: #696d7d;
+  --bg-url: url("https://img5.goodfon.com/wallpaper/nbig/d/90/fon-wallpaper-lines-abstract.jpg");
+  --font-family: 'Comic Neue', cursive;
+}
+
+:root.blue {
+  --bg-color: #9fb3c5;
+  --text-color: #1b4377;
+  --bg-url: url("https://media.istockphoto.com/vectors/abstract-vector-background-blue-wavy-vector-id1060034764?k=20&m=1060034764&s=170667a&w=0&h=H6DP7pxAXvUhy_E73iYgm_wxsPJ-97tCLYt3dIxdUR4=");
+  --font-family: 'Comic Neue', cursive;
+}
+
+:root.pink {
+  --bg-color: #b9a4a8;
+  --text-color: #914891;
+  --bg-url: url("https://i.pinimg.com/originals/be/78/05/be7805ef2512cd25bfcdec9e24ae8452.jpg");
+  --font-family: 'Comic Neue', cursive;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #121212;
+      --text-color: #45ADFE;
+    }
+}
+
+
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  background-image: var(--bg-url);
+  color: var(--text-color);
+  font-family: var(--font-family, "Inter", sans-serif);
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  height: 1vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+select {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 0.25rem;
+}
+
+
+
+    
+    }
+
+    
+    
+   
+    
+   
+
+
+@media all and (max-width: 640px){
+
+    header {
+        width: 100%;
+        height: 70%;
+        
+    }
+    
+    nav{
+        width: 100%;
+        height: 70%;
+        word-spacing: 20px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    section {
+        width: 100%;
+        height: 160%;
+        
+       
+    }
+    
+    aside{
+        width: 100%;
+        height: 160%;
+        
+       
+    }
+    
+    footer{
+        width: 100%;
+        height: 50%;
+        
+        
+    }
+    h1{
+        font-size: 30px;
+        color:blueviolet;
+        text-align: center;
+        text-shadow: 5px -5px  5px gray;
+        padding: 10px;
+    
+    }
+
+    a{
+        font-size: 15px;
+        text-decoration: none;
+        color:black;
+        background-color:lightgrey;
+        width: 150px;
+        border-radius: 5px;
+    }
+    
+    
+    a:hover{
+        background-color: mediumslateblue;
+        color: aqua;
+        
+    }
+    
+   
+    img{
+        width: 90px;
+        float: left;
+        margin-left: 15px;
+        box-shadow: 8px -8px 8px gray;
+        border-top-right-radius: 50px;
+      
+    }
+
+    
+    section p{
+        font-size: 16px ;
+       text-align: justify;
+       margin: 0 15px;
+    }
+
+    section h3{
+        margin-left: 150px;
+    }
+    section h2{
+        text-align: center;
+    }
+    
+    section h5{
+        margin-left: 150px;
+    }
+    
+    aside p {
+        font-size: 20px;
+        text-align: justify;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .acordeon{
+        background-color: azure;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .active, .acordeon:hover{
+        background-color: rgb(169, 142, 182);
+    }
+    
+    .panel{
+        padding: 0px 20px;
+        display: none;
+        overflow: hidden;
+       
+    }
+    
+    
+    a.button{
+        text-align: center;
+        background-color: rgb(253, 250, 252);
+             
+    }
+    
+    body{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+    
+    a.button{
+        text-align: center;
+             
+    }
+    
+    body{
+        background-image: url("https://st2.depositphotos.com/1029215/5351/v/950/depositphotos_53514185-stock-illustration-abstract-blue-purple-wave-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }
+    footer p{
+        font-size: 25px;
+        color: gray;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+
+
+
+    :root,
+    :root.light {
+      --bg-color: #E7F1FE;
+      --text-color: #123;
+      --bg-url:  url("https://st2.depositphotos.com/1029215/5351/v/950/depositphotos_53514185-stock-illustration-abstract-blue-purple-wave-background.jpg");
+      --font-family: 'Press Start 2P', cursive;
+    }
+    
+    :root.dark {
+      --bg-color: #222020;
+      --text-color: #696d7d;
+      --bg-url: url("https://img5.goodfon.com/wallpaper/nbig/d/90/fon-wallpaper-lines-abstract.jpg");
+      --font-family: 'Comic Neue', cursive;
+    }
+    
+    :root.blue {
+      --bg-color: #9fb3c5;
+      --text-color: #1b4377;
+      --bg-url: url("https://media.istockphoto.com/vectors/abstract-vector-background-blue-wavy-vector-id1060034764?k=20&m=1060034764&s=170667a&w=0&h=H6DP7pxAXvUhy_E73iYgm_wxsPJ-97tCLYt3dIxdUR4=");
+      --font-family: 'Comic Neue', cursive;
+    }
+    
+    :root.pink {
+      --bg-color: #b9a4a8;
+      --text-color: #914891;
+      --bg-url: url("https://i.pinimg.com/originals/be/78/05/be7805ef2512cd25bfcdec9e24ae8452.jpg");
+      --font-family: 'Comic Neue', cursive;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #121212;
+          --text-color: #45ADFE;
+        }
+      }
+    
+    
+    
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      background-image: var(--bg-url);
+      color: var(--text-color);
+      font-family: var(--font-family, "Inter", sans-serif);
+    }
+    
+    main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.5rem 0;
+      height: 1vh;
+      box-sizing: border-box;
+    }
+    
+    h1 {
+      text-align: center;
+      font-weight: normal;
+    }
+    
+    select {
+      padding: 0.25rem 0.75rem;
+      font-size: 1.25rem;
+      font-family: inherit;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border-radius: 0.25rem;
+    }
+    
+    
+    
+
+}
+
+
+
+

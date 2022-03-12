@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java - Diana Lucero -Taller 2</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ 
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Diana Lucero</a></h1>
+     
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de Mi</a></li>
+           <li><a href="Ejerjava.html">Java</a></li>
+          <li><a href="java1.html">Taller 1</a></li>
+          <li><a href="java3.html">Taller 3</a></li>
+          <li><a href="java4.html">Taller 4</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>    
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header>
+  <main id="main">
+
+   
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+      
+            <div class="section-title">
+              <h2>Taller 2</h2>
+              <h2>Java Condicionales</h2>
+              
+            </div>
+    
+                    
+                  <div class="row">
+                    <div class="resume-item">
+                      
+                        <h4>Ejercicio 1</h4>
+                        <p><em>Realizar un programa en el cual se solicite la edad de una persona. Si
+                           la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</em></p>
+                        <pre>Proceso Ejercicio1
+        
+                          Definir edad Como Entero;
+                          Definir estado Como Logico;
+                          
+                          Escribir "Digite su edad";
+                          leer edad;
+                          
+                          si edad >=18 Entonces;
+                            Escribir "Usted es mayor de edad";
+                            
+                          FinSi
+                          
+                        FinProceso
+                        </pre>
+                        
+                      </div>
+                  </div><br><br>
+          
+               
+    
+                <div class="row">
+                  <div class="resume-item">
+                  <h4>Ejercicio 2</h4>
+                  <p><em>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, 
+                    deberá mostrar en pantalla: Usted aún es un niño(a).</em></p>
+                  <pre>package com.sofkaTaller2;
+
+                    import java.util.Scanner;
+                    
+                    public class Ejercicio2_condicionales {
+                      
+                         private int edad;
+                          private Scanner input;
+                         
+                          public void Ejercicio2() {
+                    
+                              input = new Scanner(System.in);
+                    
+                              solicitarEdad();
+                              edad = capturarDatoInt();
+                              
+                              
+                              if (edad>=18) {
+                              System.out.println("Usted es mayor de edad"); 
+                            }
+                              else {
+                                System.out.println("Usted todavia es un niño(a)");
+                              }
+                          }
+                    
+                          private void solicitarEdad() {
+                              System.out.println("Por favor digite su edad");
+                              
+                              
+                          }
+                    
+                          private int capturarDatoInt() {
+                            return input.nextInt();
+                          }
+                           
+                      
+                    }
+                                </pre>
+                </div>
+              </div><br><br>
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 3</h4>
+                    <p><em>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. 
+                      Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo]
+                       usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona 
+                       es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted 
+                       es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.</em></p>
+                    
+                       <pre>package com.sofkaTaller3;
+
+                        import java.util.Scanner;
+                        
+                        public class Ejercicio3_condicionales {
+                        
+                          
+                          private String nombre;
+                            private String apellidos;
+                            private int edad;
+                            private Scanner input;
+                        
+                            public void Ejercicio3() {
+                        
+                                input = new Scanner(System.in);
+                        
+                                solicitarNombre();
+                                nombre = capturarDatoString();
+                        
+                                solicitarApellido();
+                                apellidos = capturarDatoString();
+                        
+                                solicitarEdad();
+                                edad = capturarDatoInt();
+                        
+                                if (edad>=18) {
+                                System.out.println(nombre + apellido+" "+"Usted es mayor de edad, por lo tanto puede entrar a la fiesta."); 
+                              }
+                                else {
+                                  System.out.println(nombre + apellido+" "+Usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.");
+                                }
+                        
+                            }
+                        
+                            private void solicitarNombre() {
+                                System.out.println("Por favor digite su nombre");
+                            }
+                        
+                            private void solicitarApellido() {
+                                System.out.println("Por favor digite su apellido");
+                            }
+                        
+                            private void solicitarEdad() {
+                                System.out.println("Por favor digite su edad");
+                            }
+                        
+                            
+                            private String capturarDatoString() {
+                                return input.nextLine();
+                            }
+                        
+                            private int capturarDatoInt() {
+                                return input.nextInt();
+                            }
+                        
+                            
+                        }
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 4</h4>
+                    <p><em>La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio 
+                      el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que 
+                      adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, 
+                      consultar películas disponibles y recibir película en la video tienda con la opción de realizar 
+                      anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.</em></p>
+                    <pre>package com.sofkaTaller4;
+
+                      import java.util.Scanner;
+                      
+                      public class Ejercicio4_condicionales {
+                        
+                        private String nombre;
+                        private String pelicula;
+                        private String comentario;
+                        private String novedad;
+                        
+                        
+                          
+                          
+                        public static void Peliculas() {
+                          System.out.println("Peliculas Disponibles:");
+                              System.out.println("1.la Vida es Bella");
+                              System.out.println("2.Encanto");
+                              System.out.println("3.Sing 2");
+                              System.out.println("4.Spaider-Man");
+                              System.out.println("5.Scream");
+                              System.out.println("6.Amenaza bajo el agua");
+                           
+                          }
+                          
+                        
+                        public static void AlquilerPelicula() {
+                          System.out.println("Ingrese nombre de la pelicula");
+                          Scanner lector =new Scanner(System.in);
+                            String pelicula = lector.next();
+                            System.out.println("La pelicula "+pelicula+"  ha sido alquilada con exito.");
+                            
+                        }
+                        
+                        private static boolean CapturarBoolean() {
+                            Scanner lector =new Scanner(System.in);
+                          return lector.nextBoolean();
+                          
+                        }
+                        
+                        
+                        public static void EntregarPelicula() {
+                          System.out.println("Digite nombre pelicula a devolver");
+                          Scanner lector =new Scanner(System.in);
+                            String pelicula = lector.next();
+                            System.out.println("La pelicula "+pelicula+"  ha sido devuelta con exito.");
+                            System.out.println("Desea añadir un comentario?(digite true o false)");
+                            boolean v = CapturarBoolean();
+                              if (v) {
+                            System.out.println("Escriba el estado de devolucion de la pelicula si presenta alguna novedad");
+                            String comentario=lector.next();
+                            System.out.println("Novedad ha sido ingresada con exito.");
+                            
+                        }
+                        
+                      
+                        }	
+                        
+                         public static void main(String[] args) {
+                              
+                              boolean verdadero = true;
+                              Scanner lector = new Scanner(System.in);
+                            
+                              Ejercicio4_condicionales bo = new Ejercicio4_condicionales();
+                      
+                      
+                              while (true) {
+                                
+                                
+                              
+                                System.out.println("-----------------------------------------------------");
+                                  System.out.println("*** VIDEOTIENDA EL PORVENIR ***");
+                                  System.out.println("1.Digite su Nombre y Apellido");
+                                    String nombre = lector.nextLine();
+                                   
+                                  System.out.println("ESCOJA UNA DE LAS SIGUIENTES OPCIONES");
+                                  System.out.println("1. Consultar peliculas disponibles");
+                                  System.out.println("2. Alquilar Pelicula");
+                                  System.out.println("3. Entregar Pelicula ");
+                                  System.out.println("4. SALIR");
+                                  int op = lector.nextInt();	
+                                
+                                  if (op == 4) {
+                                      System.out.println("Hasta pronto");
+                                      break;
+                                      
+                                      
+                                  } else if (op == 1) {    
+                                    bo.Peliculas();
+                                    
+                                           
+                                  } else if (op == 2) {    
+                                    bo.AlquilerPelicula();
+                                    
+                                  } else if (op ==3) {
+                                    bo.EntregarPelicula();
+                                    ;
+                                  }
+                                  
+                                
+                              }
+                              }
+                        
+                      }
+                      
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 5</h4>
+                    <p><em>La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación
+                       para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+                       características que deben indicársele al cliente para que pueda escoger el producto a comprar. 
+                       Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto 
+                       y devoluciones en caso de que se presenten.</em></p>
+                    <pre>package com.sofkaTaller5;
+
+                      import java.util.Scanner;
+                      
+                      
+                      
+                      public class Ejercicio5_condicionales {
+                      
+                      
+                      
+                      public static void Productos() {
+                        System.out.println("CONSULTA DE PRECIOS");
+                            System.out.println("1.Ibuprofeno-200 mg PRECIO: $7500");
+                            System.out.println("2.Acido acetilsalicílico?500 mg PRECIO $20500");
+                            System.out.println("3.Morfina-10 mg (sulfato de morfina) PRECIO $18900");
+                            System.out.println("4.Dexametasona Inyección: 4 mg PRECIO $12500");
+                            System.out.println("5.Albendazol (masticables): 400 mg PRECIO $25500");
+                            System.out.println("6.Amoxicilina 250 mg PRECIO $30000");
+                            System.out.println("7.Azitromicina 500 mg PRECIO $13500");
+                            System.out.println("8.pirazinamida 400 mg PRECIO $15000");
+                            System.out.println(" ");
+                         
+                        }
+                      
+                      public static void ConsultaProductos() {
+                        System.out.println("Digite el nombre del producto");
+                        Scanner lector =new Scanner(System.in);
+                        String producto = lector.next();
+                        System.out.println("Digite caracteristicas del producto");
+                        String caracteristica = lector.next();
+                        System.out.println("el producto "+ producto+" con caracteristicas "+ caracteristica+ 
+                            " sera entregado en caja al momento de su facturacion.");
+                        System.out.println("Muchas Gracias Por Su Compra");
+                        
+                      }
+                      
+                      
+                      public static void DevolucionProducto() {
+                        System.out.println("Digite el nombre del producto a devolver");
+                        Scanner lector =new Scanner(System.in);
+                        String producto = lector.next();
+                        System.out.println("Desea añadir un comentario?(digite true o false)");
+                        boolean v = CapturarBoolean();
+                          if (v) {
+                          System.out.println("Digite Comentarios y Observaciones");
+                          String comentar=lector.next();
+                          System.out.println("La Novedad ha sido ingresada con exito.");	
+                          }
+                          }
+                      
+                          
+                      
+                          private static boolean CapturarBoolean() {
+                          Scanner lector =new Scanner(System.in);
+                        return lector.nextBoolean();
+                        
+                      }
+                      
+                      public static void main(String[] args) {
+                          
+                          boolean verdadero = true;
+                          Scanner lector = new Scanner(System.in);
+                        
+                          Ejercicio5_condicionales bo = new Ejercicio5_condicionales();
+                      
+                      
+                          while (true) {
+                            
+                            
+                          
+                            System.out.println("-----------------------------------------------------");
+                              System.out.println("*** BIENVENIDOS A SU DROGUERIA MI SALUD ***");
+                              System.out.println("1.Digite su Nombre y Apellido");
+                              String nombre = lector.nextLine();
+                               
+                              System.out.println("ESCOJA UNA DE LAS SIGUIENTES OPCIONES");
+                              System.out.println("1. COMPRA DE PRODUCTO");
+                              System.out.println("2. CONSULTAR PRECIOS");
+                              System.out.println("3. DEVOLUCIONES ");
+                              System.out.println("4. SALIR");
+                              int op = lector.nextInt();	
+                            
+                              if (op == 4) {
+                                  System.out.println("Hasta pronto");
+                                  break;
+                                  
+                                  
+                              } else if (op == 1) {    
+                                bo.ConsultaProductos();
+                                
+                                       
+                              } else if (op == 2) {    
+                                bo.Productos();
+                                
+                              } else if (op ==3) {
+                                bo.DevolucionProducto() ;
+                                ;
+                              }
+                              
+                            
+                          }
+                          }
+                      
+                      
+                      
+                      }
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+           
+              <link class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 6</h4>
+                    <p><em>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las 
+                        respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados
+                        a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones
+                        por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos 
+                        hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</em></p>
+                    <pre>package com.sofkaTaller6;
+
+                        import java.util.Scanner;
+                        
+                        public class PrincipalEjercicio6 {
+                        
+                            public static void main(String[] args) {
+                            
+                            boolean verdadero = true;
+                            Scanner lector = new Scanner(System.in);
+                          
+                            Parqueadero bo = new Parqueadero();
+                        
+                        
+                            while (true) {
+                                System.out.println("-----------------------------------------------------");
+                                System.out.println("*** BIENVENIDOS TALLER DE MOTOS EL MAQUINISTA ***");
+                                System.out.println("ESCOJA UNA DE LAS SIGUIENTES OPCIONES");
+                                System.out.println("1. REGISTRO DE INGRESO");
+                                System.out.println("2. REGISTRO DE SALIDA ");
+                                System.out.println("3. SALIR");
+                                System.out.println("Elija una Opción:\n");
+                                int op = lector.nextInt();
+                        
+                                
+                                if (op == 3) {
+                                    System.out.println("Hasta pronto");
+                                    break;
+                                    
+                                   
+                                } else if (op == 1) {
+                                    System.out.println("INGRESO TALLER DE MOTOS");
+                                    System.out.println("Ingresar nombres:");
+                                    lector.nextLine();
+                                    String nombre = lector.nextLine();
+                                    System.out.println("Digite numero documento identidad del cliente");
+                                    String documento = lector.nextLine();
+                                    System.out.println("Digite numero de Placa de la moto");
+                                    String placa = lector.nextLine();
+                                    System.out.println("\"Digite modelo de la moto\"");
+                                    String modelo = lector.nextLine();
+                                    System.out.println("\"Digite observaciones de entrega de la motocicleta\"");
+                                    String observacion = lector.nextLine();
+                                    bo.crearCliente(nombre, documento, placa, modelo,observacion);
+                                    
+                                    
+                                } else if (op == 2) {
+                                    System.out.println("Salida del vehiculo");
+                                    System.out.println("Digite nombre del mecanico que realiaza la reparación\n");
+                                    lector.nextLine();
+                                    lector.nextLine();
+                                    System.out.println("Digite arreglos realizados por el mecanico\n");
+                                    String arreglo= lector.nextLine();
+                                    System.out.println("Digite numero de Placa de la moto\n");
+                                    lector.nextLine();
+                                    
+                                    System.out.println("La motocicleta de placas se le hicieron los siguientes arreglos"+arreglo+" y ha sido reparada y entregada con Exito\n");
+                                
+                        
+                                }   
+                        
+                            }
+                                    
+                            }
+                        }
+                      
+                    </pre>
+                    <P>Este taller lo componen 2 clases mas para ver las clases haga click en el siguiente enlace</P>
+                   <a href="https://github.com/Djlucero/EjerciciosTaller2Java/tree/main/CanterasNivel1Taller2/src/com/sofkaTaller6">IR A GITHUB</a>
+                  </div>
+                  
+              </div><br><br>
+
+
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 7</h4>
+                    <p><em>La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC 
+                        (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada 
+                        persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y
+                        establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</em></p>
+                    <pre>package com.sofkaTaller7;
+
+                        import java.util.Scanner;
+                        
+                        import com.sofkaTaller5.Ejercicio5_condicionales;
+                        
+                        
+                        public class Ejercicio7_condicionales {
+                        
+                            private String nombre;
+                            private String documento;
+                            private double peso;
+                            private double estatura;
+                            
+                            
+                            private static double calcularIMC(double altura, double peso){
+                                double imc = peso/(Math.pow(altura, 2));
+                                return Math.rint(imc*100)/100;
+                            }
+                            
+                        
+                            
+                            public static void main(String[] args) {
+                                 
+                                
+                                Scanner sc = new Scanner(System.in);
+                                
+                                System.out.print("SECRETARIA DE SALUD\n");
+                                System.out.print("Digite su Nombre y Apellido:\n");
+                                String nombre=sc.next();
+                                System.out.print("digite numero de documento de identidad\n");
+                                String documento=sc.nextLine();
+                                sc.next();
+                                System.out.print("Digite su peso en kilogramos? \n");
+                                double peso = sc.nextDouble();
+                                System.out.print("Digite su estatura en metros: \n");
+                                double altura = sc.nextDouble();
+                                sc.close();
+                         
+                                double imc = calcularIMC(altura, peso);
+                         
+                                String clasificacion = "";
+                                if(imc < 18.5 ){
+                                    clasificacion = "Bajo de Peso";
+                                } else if(imc>=18.5 && imc<=24.9){
+                                    clasificacion = "Peso Normal";
+                                } else if(imc>=25 && imc<=29.9){
+                                    clasificacion = "Preobecidad o Sobrepeso";
+                                } else if(imc>=30.0 && imc<=34.9){
+                                    clasificacion = "Obecidad Clase I";
+                                } else if(imc>=35.0 && imc<=39.9){
+                                    clasificacion = "Obecidad clase II";
+                                } else {
+                                    clasificacion = "Obecidad clase III";
+                                }
+                                
+                                System.out.println("\nSeñor(a) "+nombre+ " su indice de masa corporal IMC es de " + imc);
+                                System.out.println("Atendiendo al IMC, tiene: " + clasificacion);
+                         
+                            }
+                        
+                        
+                             
+                            }
+                        
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                  
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 8</h4>
+                    <p><em>El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le 
+                        permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene
+                        unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la 
+                        aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren 
+                        diariamente.</em></p>
+                    <pre>package com.sofkaTaller8;
+
+                        import java.util.Scanner;
+                        
+                        import com.sofkaTaller4.Ejercicio4_condicionales;
+                        
+                        public class Ejercicio8_condicionales {
+                        
+                            
+                            public static void Menu() {
+                                System.out.println("---------------------------------------------------------------------------------");
+                                System.out.println("ESCOJA UNA DE LAS SIGUIENTES OPCIONES");
+                                System.out.println("1. Torta festival cantidad 12 porciones decoracion crema chantilli");
+                                System.out.println("2. Torta festival cantidad 30 porciones decoracion crema chantilli");
+                                System.out.println("3. Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate");
+                                System.out.println("4. Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate");
+                                System.out.println("5. Torta 3 leches cantidad 12 porciones decoracion crema leche");
+                                System.out.println("6. Salir");	
+                                System.out.println("---------------------------------------------------------------------------------");
+                            }
+                            
+                            
+                            public static void DatosCliente() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("------BIENVENIDOS PASTELERIA DELICATESE-------");
+                                System.out.println("***para ofecerte un mejor servicio Digita la siguiente informacion***");
+                                System.out.println("Digite su Nombre y Apellido");
+                                String nombre = lector.nextLine();
+                                System.out.println("Digite numero documento identidad del cliente");
+                                String cedula = lector.nextLine();
+                                System.out.println("Bienvenid@ "+nombre);
+                            }
+                            
+                            public static void TortaUno() {
+                                
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("Usted ha elegido Torta festival cantidad 12 porciones decoracion crema chantilli");
+                                System.out.println("Ingrese cantidad");
+                                int cantidad = lector.nextInt();
+                                System.out.println("2. Digite precio");
+                                int precio = lector.nextInt();
+                                int total=(precio*cantidad);
+                                System.out.println("valor a cancelar $"+total+" Muchas Gracias por su compra");
+                                System.out.println("MUCHAS GRACIAS POR SU COMPRA");
+                            }
+                            
+                        public static void TortaDos() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("Usted ha elegido Torta festival cantidad 30 porciones decoracion crema chantilli");
+                                System.out.println("Ingrese cantidad");
+                                int cantidad = lector.nextInt();
+                                System.out.println("2. Digite precio");
+                                int precio = lector.nextInt();
+                                int total=(precio*cantidad);
+                                System.out.println("valor a cancelar $"+total+" Muchas Gracias por su compra");
+                                System.out.println("MUCHAS GRACIAS POR SU COMPRA");
+                            }
+                            
+                        public static void TortaTres() {
+                            Scanner lector = new Scanner(System.in);
+                            System.out.println("Usted ha elegido Torta de chocolate cantidad 12 porciones decoracion cubierta de chocolate ");
+                            System.out.println("Ingrese cantidad");
+                            int cantidad = lector.nextInt();
+                            System.out.println("2. Digite precio");
+                            int precio = lector.nextInt();
+                            int total=(precio*cantidad);
+                            System.out.println("valor a cancelar $"+total+" Muchas Gracias por su compra");
+                            System.out.println("MUCHAS GRACIAS POR SU COMPRA");
+                        }
+                        
+                        public static void TortaCuatro() {
+                            Scanner lector = new Scanner(System.in);
+                            System.out.println("Usted ha elegido Torta de chocolate cantidad 30 porciones decoracion cubierta de chocolate ");
+                            System.out.println("Ingrese cantidad");
+                            int cantidad = lector.nextInt();
+                            System.out.println("2. Digite precio");
+                            int precio = lector.nextInt();
+                            int total=(precio*cantidad);
+                            System.out.println("valor a cancelar $"+total+" Muchas Gracias por su compra");
+                            System.out.println("MUCHAS GRACIAS POR SU COMPRA");
+                        }
+                        
+                        public static void TortaCinco() {
+                            Scanner lector = new Scanner(System.in);
+                            System.out.println("Usted ha elegido Torta 3 leches cantidad 12 porciones decoracion crema leche ");
+                            System.out.println("Ingrese cantidad");
+                            int cantidad = lector.nextInt();
+                            System.out.println("2. Digite precio");
+                            int precio = lector.nextInt();
+                            int total=(precio*cantidad);
+                            System.out.println("Su pedido es Torta festival cantidad 12 porciones decoracion crema chantilli");
+                            System.out.println("valor a cancelar $"+total+" Muchas Gracias por su compra");
+                            System.out.println("MUCHAS GRACIAS POR SU COMPRA");
+                        }
+                            
+                            
+                             public static void main(String[] args) {
+                                    
+                                    boolean verdadero = true;
+                                    Scanner lector = new Scanner(System.in);
+                                  
+                                    Ejercicio8_condicionales bo = new Ejercicio8_condicionales();
+                        
+                                    bo.DatosCliente();
+                                    
+                        
+                                    while (true) {
+                                        
+                                        
+                                        bo.Menu();
+                                        int op = lector.nextInt();	
+                                        
+                                        if (op == 6) {
+                                            System.out.println("Hasta pronto");
+                                            break;
+                                            
+                                            
+                                        } else if (op == 1) {    
+                                            bo.TortaUno();
+                                            
+                                                 
+                                        } else if (op == 2) {    
+                                            bo.TortaDos();
+                                            
+                                        } else if (op ==3) {
+                                            bo.TortaTres();
+                                            
+                                        } else if (op ==4) {
+                                            bo.TortaCuatro();
+                                            
+                                        } else if (op ==5) {
+                                            bo.TortaCinco();
+                                            
+                                        }
+                                        
+                                        
+                                    }
+                                    }
+                            
+                        }
+                        
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+
+
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 9</h4>
+                    <p><em>El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área 
+                        de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio 
+                        solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione 
+                        si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos 
+                        necesarios para realizar cada cálculo y mostrar su respectivo resultado.</em></p>
+                    <pre>package com.sofkaTaller9;
+
+                        import java.util.Scanner;
+                        
+                        
+                        
+                        public class Ejercicio9_condicionales {
+                        
+                            public static void Rectangulo() {
+                                Scanner lector =new Scanner(System.in);
+                                System.out.println("RECTANGULO:");
+                                System.out.println("Digite base en cm:");
+                                float num1 = lector.nextFloat();
+                                System.out.println("Digite altura en cm:");
+                                float num2 = lector.nextFloat();
+                                float area =(num1*num2);
+                                System.out.println("Area del rectángulo = "+area+" cm^2");
+                                        
+                            }
+                            
+                            public static void Triangulo() {
+                                Scanner lector =new Scanner(System.in);
+                                System.out.println("TRIANGULO:");
+                                System.out.println("Digite base mayor en cm:");
+                                float num1 = lector.nextFloat();
+                                System.out.println("Digite base menor en cm:");
+                                float num2 = lector.nextFloat();
+                                float area =(num1*num2)/2;
+                                System.out.println("Area del rectángulo = "+area+" cm^2");
+                                        
+                            }
+                            
+                            
+                            public static void Trapecio() {
+                                Scanner lector =new Scanner(System.in);
+                                System.out.println("TRAPECIO:");
+                                System.out.println("Digite base mayor en cm:");
+                                float num1 = lector.nextFloat();
+                                System.out.println("Digite base menor en cm:");
+                                float num2 = lector.nextFloat();
+                                System.out.println("Digite altura en cm:");
+                                float num3 = lector.nextFloat();
+                                float area =(num3*(num1*num2))/2;
+                                System.out.println("Area del rectángulo = "+area+" cm^2");
+                                        
+                            }
+                                
+                            
+                            
+                            
+                            
+                            public static void main(String[] args) {
+                                
+                                boolean verdadero = true;
+                                Scanner lector = new Scanner(System.in);
+                              
+                                Ejercicio9_condicionales bo = new Ejercicio9_condicionales();
+                        
+                        
+                                while (true) {
+                                    
+                                    
+                                
+                                    System.out.println("-----------------------------------------------------");
+                                    System.out.println("*** BIENVENIDOS A SU CLASE DE GEOMETRIA ***");
+                                    System.out.println("SELECCIONE LA OPCION DE LA FIGURA A CALCULAR");
+                                    System.out.println("1. Rectangulo");
+                                    System.out.println("2. Triangulo");
+                                    System.out.println("3. Trapecio");
+                                    System.out.println("4. SALIR");
+                                    System.out.println("-----------------------------------------------------");
+                                    
+                                    int op = lector.nextInt();	
+                                    
+                                    if (op == 4) {
+                                        System.out.println("Hasta pronto");
+                                        break;
+                                        
+                                        
+                                    } else if (op == 1) {    
+                                        bo.Rectangulo();
+                                        
+                                             
+                                    } else if (op == 2) {    
+                                        bo.Triangulo();
+                                        
+                                    } else if (op ==3) {
+                                        bo.Trapecio();
+                                    }
+                                    
+                                    
+                                }
+                                }
+                        
+                        
+                        
+                        }
+                        
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+              
+              <div class="row">
+                <div class="resume-item">
+                  
+                    <h4>Ejercicio 10</h4>
+                    <p><em>El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una 
+                        aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga 
+                        los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, 
+                        retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los 
+                        retiros el valor no puede ser mayor al valor que tiene en la cuenta.</em></p>
+                    <pre>package com.sofkaTaller10;
+
+                        import java.util.Scanner;
+                        
+                        import com.sofkaTaller4.Ejercicio4_condicionales;
+                        
+                                
+                        
+                        public class Ejercicio10_condicionales {
+                            
+                            static int cuenta;
+                            static float monto;
+                            static float saldo;
+                            static float retiro;
+                            static String nombre;
+                            static int cuenta1;
+                            
+                            
+                        
+                            public static void DatosPersonales() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("-----------------------------------------------------");
+                                System.out.println("*** BIENVENIDOS A SU BANCO FIEL ***");
+                                System.out.println("Digite su Nombre y Apellido");
+                                nombre = lector.nextLine();
+                                System.out.println("Digite numero de documento del titular");
+                                String cedula = lector.nextLine();
+                                System.out.println("Bienvenid@"+nombre);
+                                System.out.println("-----------------------------------------------------");
+                                
+                                
+                            }
+                            
+                             public static void Ingreso() {
+                                     Scanner lector = new Scanner(System.in);
+                                     System.out.println("-----------------------------------------------------");
+                                    System.out.println("Seleccione la opcion a realizar	");
+                                    System.out.println("1. Consignaciones");
+                                    System.out.println("2. Retiros");
+                                    System.out.println("3. Consultas");
+                                    System.out.println("4. SALIR");
+                                    System.out.println("-----------------------------------------------------");
+                                       
+                             }
+                            
+                            public static void Consignar() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("Usted a elegido consignar");
+                                System.out.println("Digite el numero de su cuenta");
+                                cuenta = lector.nextInt();
+                                System.out.println("El valor minimo a consignar es de $10.000");
+                                System.out.println("Digite valor a consignar");
+                                monto = lector.nextFloat();
+                                if (monto>=10000) {
+                                    System.out.println("Transaccion exitosa");	
+                                }else {
+                                    System.out.println("El valor ingresado no coincide con los parametros establecidos");	
+                                }
+                                saldo=(saldo+monto);
+                            }
+                            
+                            public static void Retiros() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("Digite el numero de su cuenta");
+                                cuenta = lector.nextInt();
+                                System.out.println("Digite el valor a retirar");
+                                retiro = lector.nextFloat();
+                                if (retiro<=saldo) {
+                                    System.out.println("Transaccion realizada con exito");
+                                    saldo=(saldo-retiro);
+                                }else {
+                                    System.out.println("No cuenta con fondos suficientes para realizar la transaccion");	
+                                }
+                                
+                            }
+                            
+                            
+                            public static void ConsultaSaldo() {
+                                Scanner lector = new Scanner(System.in);
+                                System.out.println("Digite el numero de su cuenta");
+                                cuenta = lector.nextInt();
+                                System.out.println("su saldo es $"+saldo);
+                                   System.out.println("Muchas gracias por utilizar nuestros servicios");	
+                                
+                            }
+                        
+                            
+                            
+                             public static void main(String[] args) {
+                                    
+                                    boolean verdadero = true;
+                                    Scanner lector = new Scanner(System.in);
+                                  
+                                    Ejercicio10_condicionales bo = new Ejercicio10_condicionales();
+                        
+                                    
+                                    bo.DatosPersonales();
+                        
+                                    while (true) {
+                                        
+                                        
+                                    
+                                        
+                                        bo.Ingreso();
+                                         int op = lector.nextInt();
+                                        
+                                        if (op == 4) {
+                                            System.out.println("Hasta pronto");
+                                            break;
+                                            
+                                            
+                                        } else if (op == 1) {    
+                                            
+                                            bo.Consignar();
+                                                 
+                                        } else if (op == 2) {    
+                                            bo.Retiros();
+                                            
+                                        } else if (op ==3) {
+                                            bo.ConsultaSaldo();
+                                            
+                                        }
+                                        
+                                        
+                                    }
+                                    }
+                            
+                        
+                            
+                            
+                        }
+                        
+                      
+                    </pre>
+                    
+                  </div>
+              </div><br><br>
+
+
+    
+    </section>
+
+  </main>
+
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Diana Lucero</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+ 
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
